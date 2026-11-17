@@ -14,7 +14,7 @@ Inspect `publication/files.txt` and `publication/content_manifest.json`. Update 
 
 ## Authenticate
 
-The GitHub account owner must complete authentication. Do not paste a password or token into a chat, README or committed file:
+For creating a new repository through the GitHub CLI, the account owner must complete CLI authentication. Do not paste a password or token into a chat, README or committed file:
 
 ```bash
 bash tools/github.sh auth login --hostname github.com --git-protocol https --web
@@ -22,6 +22,16 @@ bash tools/github.sh auth status
 ```
 
 The wrapper uses an installed GitHub CLI or the local ignored CLI downloaded from its official release during preparation. On another machine, install [GitHub CLI](https://cli.github.com/) first. Authentication is independent of experiment execution.
+
+For an existing repository, Git authentication supplied by an editor, credential manager or SSH agent may already support pushing even when GitHub CLI is not logged in. After reviewing and committing updates, use the existing configured remote:
+
+```bash
+git remote -v
+git push origin main
+git ls-remote origin refs/heads/main
+```
+
+Preserve any existing remote history; do not force-push over someone else's work. The initial `ResMimic_experiments` README commit was retained through a merge before uploading this package.
 
 ## Create and push
 

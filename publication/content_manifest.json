@@ -134,12 +134,12 @@
       "bytes": 13521
     },
     "docs/INSTALLATION.md": {
-      "sha256": "e5f2a43baf907c1db384da3d83c336c908bd2a9da1761ba90c715a38691f88c2",
-      "bytes": 5498
+      "sha256": "9882a57769a4c0f1eac777d28d5c16c060949f3f5809be9e9dc57fc65772d9c1",
+      "bytes": 5451
     },
     "docs/PUBLISHING.md": {
-      "sha256": "0fb676ec8709045c10d32d80595d0bd7f46d2c4f38e0d2cb743977a6b31bad6d",
-      "bytes": 2824
+      "sha256": "b3657e03e76de3bcc7dd9928743f8ef97a1684ecf1ba4cc800a4ea4a06e1add6",
+      "bytes": 3398
     },
     "docs/RESULTS.md": {
       "sha256": "b509086b488c97ebbb82e9f35ca1801635b534ec415477381933101d806bf9e6",
@@ -922,8 +922,8 @@
       "bytes": 1019
     },
     "tools/publish_github.py": {
-      "sha256": "520f3d3a68bea424737a2731b485e110b7c01513a5f8b4eac3c7d032f8e5310c",
-      "bytes": 3951
+      "sha256": "c0593979c91f9e35198fb1666cacd24554f1d8f7c45ed8d5210efb90c6b38f5b",
+      "bytes": 3984
     },
     "tools/run_geometry.sh": {
       "sha256": "04136b5a2db266caa28c7a72d6c53ccf83e9e2433ad4876b86856c7fce91b207",

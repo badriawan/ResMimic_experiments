@@ -23,7 +23,7 @@ if remote.returncode==0 and remote_url!=url:raise SystemExit('Existing origin po
 status_path=root/'publication/github_status.json';previous=json.loads(status_path.read_text())
 existing=call(gh+['repo','view',args.repo,'--json','nameWithOwner,visibility,url'],check=False)
 if existing.returncode==0:
-    if previous.get('repository')!=args.repo or previous.get('state')!='repository_created':raise SystemExit('The destination already exists and is not this recorded publication; refusing to overwrite it.')
+    if previous.get('repository')!=args.repo or previous.get('state') not in ['repository_created','published_and_verified']:raise SystemExit('The destination already exists and is not this recorded publication; refusing to overwrite it.')
     repo_info=json.loads(existing.stdout)
     if repo_info['visibility'].lower()!=args.visibility:raise SystemExit('Existing visibility differs; refusing to change access.')
 else:

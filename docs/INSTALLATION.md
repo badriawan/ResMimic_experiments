@@ -16,7 +16,7 @@ export RESMIMIC_ROOT="$PWD"
 cd InterPose/custom_data
 ```
 
-If `GMR` or `InterPose/custom_data` already exists, inspect it and reuse the intended checkout; do not clone over existing work. The GitHub URL above is the intended publication destination; consult `publication/github_status.json` for the actual publishing state of a local preparation.
+If `GMR` or `InterPose/custom_data` already exists, inspect it and reuse the intended checkout; do not clone over existing work. `publication/github_status.json` records the publication state and verified destination of a local preparation.
 
 ## 2. Geometry / GMR environment
 
