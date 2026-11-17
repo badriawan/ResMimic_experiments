@@ -138,8 +138,8 @@
       "bytes": 5451
     },
     "docs/PUBLISHING.md": {
-      "sha256": "b3657e03e76de3bcc7dd9928743f8ef97a1684ecf1ba4cc800a4ea4a06e1add6",
-      "bytes": 3398
+      "sha256": "fad5eb0450a893613aff54303a2ba969a4c145346bc5e4a47bf89f6e01ad5959",
+      "bytes": 3419
     },
     "docs/RESULTS.md": {
       "sha256": "b509086b488c97ebbb82e9f35ca1801635b534ec415477381933101d806bf9e6",
@@ -930,8 +930,8 @@
       "bytes": 678
     },
     "tools/update_publication.py": {
-      "sha256": "d885ffa54594ce6ac42c6327a7d5df868cae79eaf87561339d5faaebbca8f587",
-      "bytes": 4390
+      "sha256": "9f2ac9b298bd51b9b4ec341ea47e46fd91cca49ddc015b235104e86a7f7cbf0a",
+      "bytes": 4484
     }
   },
   "hash_exclusions": [

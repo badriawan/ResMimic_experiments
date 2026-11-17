@@ -34,11 +34,13 @@
   "new_optimizer_updates": 0,
   "corrected_PPO_training_executed": false,
   "successful_physical_lift_carry_verified": false,
-  "github_publication": "User-provided public repository exists; upload verification pending.",
+  "github_publication": "Published and verified at https://github.com/badriawan/ResMimic_experiments; source tree verified by remote branch SHA and GitHub API blob hashes.",
   "scope_notes": [
     "Existing pinned external ResMimic/GMR and installed interpreters were reused.",
     "No new corrected PPO run, long training, or actual new TensorBoard server was started.",
     "Historical and new finite evaluation videos show unsuccessful carrying.",
     "Legacy converter source remains provenance, not the portable entry point."
-  ]
+  ],
+  "github_verified_source_commit": "62e61e960a61ee6719a988ed53577d11e0518b78",
+  "github_publication_verified_at_utc": "2026-11-17T02:54:41.599947+00:00"
 }

@@ -1,9 +1,14 @@
 {
-  "state": "repository_created",
+  "state": "published_and_verified",
   "repository": "badriawan/ResMimic_experiments",
   "url": "https://github.com/badriawan/ResMimic_experiments",
   "visibility": "public",
   "repository_provided_by_user": true,
-  "upload_verified": false,
-  "note": "Existing initial README history is retained by a merge; reviewed experiment upload is pending verification."
+  "upload_verified": true,
+  "verified_source_commit": "62e61e960a61ee6719a988ed53577d11e0518b78",
+  "remote_blob_count": 236,
+  "videos_uploaded": 9,
+  "all_remote_blob_hashes_match_local": true,
+  "initial_remote_commit_preserved": true,
+  "note": "Source tree was verified through Git branch SHA and GitHub API blob hashes before this publication-metadata update. The final metadata push is verified separately in the local receipt."
 }

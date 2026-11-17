@@ -48,7 +48,7 @@ The commands use the official [GitHub CLI repository creation interface](https:/
 ## Status records
 
 - `publication/github_status.json`: local preparation or repository-creation metadata.
-- `publication/last_push_receipt.json`: generated only after a verified push; not part of the initial curated snapshot.
+- `publication/last_push_receipt.json`: local mutable receipt generated only after a verified push; excluded from the publication allowlist.
 - `publication/validation.json`: preparation checks and their scope, including unexecuted tests.
 
 If credentials or GitHub access are unavailable, the accurate outcome is **local repository prepared; GitHub publication pending authentication**. Do not claim the repository is online until the remote branch check succeeds.
