@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CPU_FIXTURES",
+  "checks": {
+    "dimensions": true,
+    "two_actors": true,
+    "object_reward": true,
+    "delta_schema": true,
+    "positive_save_interval": true,
+    "base_stripping_exact": true,
+    "actual_network_forward": true,
+    "base_frozen": true,
+    "optimizer_excludes_base_teacher": true,
+    "no_optimizer_updates": true,
+    "world_object_reference_once": true,
+    "object_features_local": true,
+    "object_reward_origin_independent": true,
+    "repeated_observation_dimensions": true,
+    "actor_critic_object_features": true,
+    "future_slice_untouched": true,
+    "subset_actor_indices": true,
+    "reset_world_translation": true,
+    "subset_other_actor_untouched": true,
+    "consistent_zero_reset_velocities": true,
+    "pose_setter_outside_reset_blocked": true
+  },
+  "simulator_executed": false,
+  "training_executed": false,
+  "optimizer_updates": 0,
+  "scope": "Actual CPU runner/network forward and local tensor/reset methods with synthetic loader/SDK; no physical simulation or PPO backward/update verified."
+}

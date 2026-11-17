@@ -1,0 +1,29 @@
+{
+  "geometry": {
+    "python": "3.11.18",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "mujoco": "3.5.0",
+      "mink": "1.3.0",
+      "daqp": "0.10.3",
+      "trimesh": "5.2.0",
+      "imageio": "2.38.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1"
+    }
+  },
+  "simulation": {
+    "python": "3.8.20",
+    "packages": {
+      "numpy": "1.23.0",
+      "scipy": "1.10.1",
+      "torch": "2.4.1",
+      "tensorboard": "2.14.0",
+      "protobuf": "5.29.6",
+      "imageio": "2.35.1",
+      "trimesh": "4.12.2"
+    }
+  },
+  "note": "Observed installed environments used for validation, not a complete lockfile or evidence of a fresh dependency installation."
+}

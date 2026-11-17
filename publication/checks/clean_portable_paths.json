@@ -1,0 +1,19 @@
+{
+  "status": "PASS_PORTABLE_PATH_FIXTURES",
+  "checks": {
+    "current_checkout_path_is_idempotent": true,
+    "interpreter_override": true,
+    "historical_input_rebase_hashes": true,
+    "historical_asset_rebase": true,
+    "historical_motion_rebase": true,
+    "cold_checkout_without_state": true,
+    "explicit_checkpoint_selection": true,
+    "upstream_root_rebase": true
+  },
+  "simulator_executed": false,
+  "optimizer_updates": 0,
+  "training_executed": false,
+  "limitations": [
+    "Path/configuration fixtures only; no GPU rendering, simulator construction, or clean-machine dependency installation is performed."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "status": "PASS_CLEAN_CHECKOUT",
+  "source_commit": "306564f0a4f9d043b428024f267e8e05ddc071be",
+  "fresh_tree": ".verification/ResMimic/InterPose/custom_data",
+  "simulation_steps": [
+    {
+      "step": "simulation_config",
+      "exit_code": 0,
+      "wall_time_s": 2.908,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "timeout_regression",
+      "exit_code": 0,
+      "wall_time_s": 2.962,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "cpu_networks",
+      "exit_code": 0,
+      "wall_time_s": 2.929,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "portable_paths",
+      "exit_code": 0,
+      "wall_time_s": 0.054,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "background_mocks",
+      "exit_code": 0,
+      "wall_time_s": 2.27,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "historical_checkpoint_physical_render",
+      "exit_code": 0,
+      "wall_time_s": 19.956,
+      "open_trace_original_custom_data_dependencies": []
+    }
+  ],
+  "geometry_steps": {
+    "pick_place_align_retarget_validate": true,
+    "lift_hold_align_retarget_validate": true,
+    "clip_specific_foot_correction": true,
+    "stored_reference_render": true,
+    "original_custom_data_reads_blocked_by_python_audit": true
+  },
+  "dependencies": "Existing pinned ResMimic/GMR and installed interpreters reused; no fresh dependency installation performed.",
+  "physical_evaluation": {
+    "frames": 271,
+    "steps": 270,
+    "simulated_time_s": 5.400000256486237,
+    "optimizer_updates": 0,
+    "object_pose_setters": 0,
+    "all_inputs_unchanged": true,
+    "final_lamp_tilt_deg": 89.02447940363912
+  },
+  "new_training_executed": false,
+  "corrected_PPO_backward_tested": false,
+  "read_audit_note": "Geometry used a Python read guard; native Isaac Gym checks used OS open/openat tracing, avoiding incompatible Python audit instrumentation during SDK import."
+}

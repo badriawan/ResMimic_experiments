@@ -1,26 +1,31 @@
-[
-  {
-    "step": "simulation_config",
-    "exit_code": 0,
-    "wall_time_s": 2.942,
-    "open_trace_original_custom_data_dependencies": []
-  },
-  {
-    "step": "timeout_regression",
-    "exit_code": 0,
-    "wall_time_s": 2.823,
-    "open_trace_original_custom_data_dependencies": []
-  },
-  {
-    "step": "cpu_networks",
-    "exit_code": 0,
-    "wall_time_s": 2.951,
-    "open_trace_original_custom_data_dependencies": []
-  },
-  {
-    "step": "portable_paths",
-    "exit_code": 1,
-    "wall_time_s": 0.053,
-    "open_trace_original_custom_data_dependencies": []
-  }
-]
+{
+  "status": "SUPERSEDED_AND_RESOLVED",
+  "cause": "Initial nested-checkout path fixture exposed non-idempotent path rebasing. Fixed and covered by the final clean-checkout tests.",
+  "attempt_steps": [
+    {
+      "step": "simulation_config",
+      "exit_code": 0,
+      "wall_time_s": 2.942,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "timeout_regression",
+      "exit_code": 0,
+      "wall_time_s": 2.823,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "cpu_networks",
+      "exit_code": 0,
+      "wall_time_s": 2.951,
+      "open_trace_original_custom_data_dependencies": []
+    },
+    {
+      "step": "portable_paths",
+      "exit_code": 1,
+      "wall_time_s": 0.053,
+      "open_trace_original_custom_data_dependencies": []
+    }
+  ],
+  "superseded_by": "clean_checkout.json"
+}

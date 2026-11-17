@@ -1,4 +1,44 @@
 {
-  "status": "PREPARATION_IN_PROGRESS",
-  "training_executed_during_publication": false
+  "status": "PASS_PREPARATION_AND_CLEAN_CHECKOUT",
+  "created_at_utc": "2026-11-17T01:52:11.853563+00:00",
+  "checks": {
+    "both_dataset_alignment_and_actual_GMR_retargeting": true,
+    "paired_native_schema_and_joint_limits": true,
+    "clip_specific_foot_correction": true,
+    "reference_video_render": true,
+    "contact_dense_600Hz": true,
+    "arm_smoothing_dense_2400Hz": true,
+    "transition_build_and_dense_2400Hz": true,
+    "cpu_network_and_layout_fixtures": true,
+    "timeout_endpoint_to_ordinary_regression": true,
+    "portable_path_fixtures": true,
+    "six_background_process_mock_tests": true,
+    "historical_residual_physical_render": true,
+    "base_only_physical_render": true,
+    "zero_original_custom_data_reads_in_OS_traced_simulation": true,
+    "nine_videos_decoded": true
+  },
+  "fixture_counts": {
+    "cpu": 21,
+    "timeout": 7,
+    "portable_paths": 8,
+    "background_mocks": 6,
+    "geometry_unit_tests": 3
+  },
+  "videos": 9,
+  "decoded_video_frames": 2889,
+  "fresh_clone": ".verification/ResMimic/InterPose/custom_data",
+  "dependencies_reused": true,
+  "fresh_dependency_installation_tested": false,
+  "new_simulation_executed": true,
+  "new_optimizer_updates": 0,
+  "corrected_PPO_training_executed": false,
+  "successful_physical_lift_carry_verified": false,
+  "github_publication": "Pending authentication and visibility selection; no remote push claimed.",
+  "scope_notes": [
+    "Existing pinned external ResMimic/GMR and installed interpreters were reused.",
+    "No new corrected PPO run, long training, or actual new TensorBoard server was started.",
+    "Historical and new finite evaluation videos show unsuccessful carrying.",
+    "Legacy converter source remains provenance, not the portable entry point."
+  ]
 }

@@ -1,0 +1,189 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "checkpoint": "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/model_5000.pt",
+  "completed_training_iterations": 5000,
+  "stop_reason": "bounded_clip_complete",
+  "simulated_time_s": 5.400000256486237,
+  "exported_reference_duration_s": 5.416666507720947,
+  "steps": 270,
+  "initial": {
+    "time_s": 0.0,
+    "source_time_s": 0.0,
+    "root_xyz": [
+      0.013281431049108505,
+      -0.015263581648468971,
+      0.7856314778327942
+    ],
+    "root_xy_error_m": 1.1206938324903604e-05,
+    "joint_tracking_rms_rad": 0.0017447680002078414,
+    "foot_force_z_N": [
+      0.0,
+      0.0
+    ],
+    "object_xyz": [
+      -0.3457023501396179,
+      0.13047818839550018,
+      0.817441463470459
+    ],
+    "reference_object_xyz": [
+      -0.3457023501396179,
+      0.13047818839550018,
+      0.8174808025360107
+    ],
+    "object_position_error_m": 3.933906555175781e-05,
+    "object_linear_speed_m_s": 0.01961960829794407,
+    "object_floor_gap_m": 0.0019640324924006247,
+    "object_tilt_deg": 0.0,
+    "object_contact_force_N": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hand_contact_force_norm_N": [
+      0.0,
+      0.0
+    ],
+    "object_airborne": false,
+    "robot_supported_airborne_evidence": false
+  },
+  "final": {
+    "time_s": 5.400000256486237,
+    "source_time_s": 4.150000256486237,
+    "root_xyz": [
+      -0.3623497486114502,
+      -0.1511542946100235,
+      0.7593572735786438
+    ],
+    "root_xy_error_m": 1.298693060874939,
+    "joint_tracking_rms_rad": 0.1373271346092224,
+    "foot_force_z_N": [
+      400.93463134765625,
+      0.0
+    ],
+    "object_xyz": [
+      -1.6665329933166504,
+      -0.2113303542137146,
+      0.1114170253276825
+    ],
+    "reference_object_xyz": [
+      0.032907336950302124,
+      -1.7416273355484009,
+      0.8415266871452332
+    ],
+    "object_position_error_m": 2.400618076324463,
+    "object_linear_speed_m_s": 0.1978461891412735,
+    "object_floor_gap_m": 9.350096226989901e-07,
+    "object_tilt_deg": 89.08770500759933,
+    "object_contact_force_N": [
+      4.9985469559032936e-06,
+      0.0,
+      37.202964782714844
+    ],
+    "hand_contact_force_norm_N": [
+      0.0,
+      0.0
+    ],
+    "object_airborne": false,
+    "robot_supported_airborne_evidence": false
+  },
+  "root_xy_error_mean_m": 0.3900926868629164,
+  "object_position_error_mean_m": 0.7847896108912421,
+  "max_object_floor_gap_m": 0.004553601698434995,
+  "supported_airborne_proxy_samples": 0,
+  "frames": 271,
+  "fps": 50.0,
+  "video_sha256": "c94a924fd19a41f8d0955208debbed38e35907f87d43582bbe49c2cb26b545bb",
+  "input_sha256": {
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/model_5000.pt": "269c22051ff5e82c66600dd37e9d80678a6e989ce4feb6c190fd126c3a469388",
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/env_config.json": "912b2a1726ff5228edd07f84e070a92fc975ce2150de1c2f8b84dfae37cd2aae",
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/train_config.json": "4f12d18e2357db176cd11a84e72449e7685c26739639eb648c11303731388c86",
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.pkl": "4f5597f12544d8d93546c1f12848a5f87ad24638088c58a07aeb03b2a6683849",
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.npz": "04f42fe7f1876a7a7db4f4f22f199cade7a2eabac5b4bf38f5b411b04d967c58",
+    "/home/badriawan/ResMimic/InterPose/custom_data/.verification/ResMimic/InterPose/custom_data/pick_place_001/base_policy/base_policy.pt": "fd98a2af49b8c1b3e39a57b503272db0dacc0d56c7e68d1c8dddfbd9cb9d931c"
+  },
+  "all_inputs_unchanged": true,
+  "object_pose_setters_during_rollout": 0,
+  "actual_physical_properties": {
+    "object_mass_kg": 4.0,
+    "com_m": [
+      0.0019442721968516707,
+      0.01010816264897585,
+      -0.4464161992073059
+    ],
+    "inertia_kg_m2": [
+      [
+        1.457401990890503,
+        -7.792682481522206e-06,
+        -6.899228174006566e-05
+      ],
+      [
+        -7.822484803909902e-06,
+        1.457046627998352,
+        0.021990031003952026
+      ],
+      [
+        -6.899228174006566e-05,
+        0.021990027278661728,
+        0.019825631752610207
+      ]
+    ],
+    "object_body_flags": 0,
+    "object_actor_dof_count": 0,
+    "actor_count": 2,
+    "actor_indices": [
+      [
+        0,
+        1
+      ]
+    ],
+    "object_body_index": 38,
+    "asset_options": {
+      "fix_base_link": false,
+      "disable_gravity": false,
+      "vhacd_enabled": false,
+      "override_com": false,
+      "override_inertia": false,
+      "linear_damping": 0.01,
+      "angular_damping": 0.01
+    },
+    "object_shapes": [
+      {
+        "friction": 0.6000000238418579,
+        "restitution": 0.0,
+        "rolling_friction": 0.0,
+        "torsion_friction": 0.0,
+        "contact_offset": 0.0020000000949949026,
+        "rest_offset": 0.0
+      },
+      {
+        "friction": 0.6000000238418579,
+        "restitution": 0.0,
+        "rolling_friction": 0.0,
+        "torsion_friction": 0.0,
+        "contact_offset": 0.0020000000949949026,
+        "rest_offset": 0.0
+      },
+      {
+        "friction": 0.6000000238418579,
+        "restitution": 0.0,
+        "rolling_friction": 0.0,
+        "torsion_friction": 0.0,
+        "contact_offset": 0.0020000000949949026,
+        "rest_offset": 0.0
+      }
+    ]
+  },
+  "optimizer_updates": 0,
+  "training_executed": false,
+  "deterministic_actions": true,
+  "base_only": true,
+  "residual_actions_enabled": false,
+  "checkpoint_normalizers_loaded": true,
+  "wall_time_s": 14.628093009989243,
+  "limitations": [
+    "One-seed deterministic evaluation, not robust performance certification.",
+    "Bounded at the last complete control tick below the reference endpoint.",
+    "Supported-airborne is a heuristic, not direct proof of hand force closure.",
+    "Early termination retains the terminal frame and performs no automatic restart."
+  ]
+}

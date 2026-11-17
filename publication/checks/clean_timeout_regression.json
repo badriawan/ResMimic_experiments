@@ -1,0 +1,39 @@
+{
+  "status": "PASS_TIMEOUT_TRANSITION_REGRESSION",
+  "checks": {
+    "endpoint_bootstrap": true,
+    "next_ordinary_no_bootstrap": true,
+    "later_ordinary_no_bootstrap": true,
+    "independent_snapshots": true,
+    "old_path_rebased": true,
+    "nested_metadata_rebased": true,
+    "disabled_timeouts_removed": true
+  },
+  "transitions": [
+    {
+      "done": true,
+      "current_timeout": true,
+      "reported_timeout": true,
+      "stored_reward": 10.899999618530273,
+      "metadata_is_snapshot": true
+    },
+    {
+      "done": false,
+      "current_timeout": false,
+      "reported_timeout": false,
+      "stored_reward": 1.0,
+      "metadata_is_snapshot": true
+    },
+    {
+      "done": false,
+      "current_timeout": false,
+      "reported_timeout": false,
+      "stored_reward": 1.0,
+      "metadata_is_snapshot": true
+    }
+  ],
+  "simulator_executed": false,
+  "optimizer_updates": 0,
+  "training_executed": false,
+  "scope": "Actual termination/reward-ingestion methods on CPU at a synthetic physics boundary; endpoint then ordinary steps. Does not validate physical carrying or PPO convergence."
+}

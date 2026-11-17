@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "steps": [
+    {
+      "step": "contact_dense600",
+      "exit_code": 0,
+      "wall_time_s": 14.072
+    },
+    {
+      "step": "arms_dense2400",
+      "exit_code": 0,
+      "wall_time_s": 54.642
+    },
+    {
+      "step": "transition_builder",
+      "exit_code": 0,
+      "wall_time_s": 0.888
+    },
+    {
+      "step": "transition_dense2400",
+      "exit_code": 0,
+      "wall_time_s": 70.904
+    }
+  ],
+  "new_physics_or_training": false,
+  "dependencies": "Pinned existing upstream URDF/GMR libraries; artifacts read from clean Git clone."
+}
