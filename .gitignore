@@ -2,6 +2,12 @@
 # Runtime outputs, SDKs, caches, state, auth tools and backups stay local.
 *
 !*/
+/.verification/
+/.tools/
+/.runtime/
+/.cache/
+/archive/
+/outputs/
 !/.gitattributes
 !/.gitignore
 !/LICENSE
@@ -170,6 +176,15 @@
 !/pick_place_001/demo_object_base_policy/step_3_transition/scripts/summarize_startup.py
 !/pick_place_001/demo_object_base_policy/step_3_transition/scripts/validate_transition.py
 !/pick_place_001/residual_policy/after_tuning/README.md
+!/pick_place_001/residual_policy/after_tuning/assets/asset_profile.json
+!/pick_place_001/residual_policy/after_tuning/assets/collider_vertices.npz
+!/pick_place_001/residual_policy/after_tuning/assets/floorlamp_base_collision.obj
+!/pick_place_001/residual_policy/after_tuning/assets/floorlamp_physical.urdf
+!/pick_place_001/residual_policy/after_tuning/assets/floorlamp_shade_collision.obj
+!/pick_place_001/residual_policy/after_tuning/assets/floorlamp_stem_collision.obj
+!/pick_place_001/residual_policy/after_tuning/assets/floorlamp_visual.obj
+!/pick_place_001/residual_policy/after_tuning/assets/oracle_fixture.urdf
+!/pick_place_001/residual_policy/after_tuning/assets/oracle_robot_lamp.urdf
 !/pick_place_001/residual_policy/after_tuning/evaluations/model_5000_20261114T225204_685687Z/artifact_validation.json
 !/pick_place_001/residual_policy/after_tuning/evaluations/model_5000_20261114T225204_685687Z/result.json
 !/pick_place_001/residual_policy/after_tuning/evaluations/model_5000_20261114T225204_685687Z/samples.json

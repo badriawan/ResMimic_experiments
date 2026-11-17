@@ -1,0 +1,270 @@
+{
+  "status": "ASSET_PREPARED_ASSUMED_PHYSICS",
+  "source_mesh": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/assets/floorlamp.obj",
+  "source_sha256": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506",
+  "source_reference": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.npz",
+  "source_reference_sha256": "05728df915400ca5c38b9c124b9e18e35270da5daded966dacad23df93788464",
+  "source_bounds_m": [
+    [
+      -0.10934224,
+      -0.12225654,
+      -0.81547641
+    ],
+    [
+      0.11758981,
+      0.1195071,
+      0.76942663
+    ]
+  ],
+  "source_origin_preserved": true,
+  "source_mesh_scale": [
+    1,
+    1,
+    1
+  ],
+  "urdf": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/assets/floorlamp_physical.urdf",
+  "urdf_sha256": "bb335281f04b38453aabdf29a000647fc9b156c431ef4487882245701d77d10b",
+  "visual_sha256": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506",
+  "section_derivation": {
+    "method": "Central 50% Z range estimates stem radius; broad vertices exceed twice that radius; lower/upper broad vertex Z extrema shifted 1um inward along shaft set base/stem/shade boundaries, excluding coplanar broad rims from stem. Every source triangle is clipped at both boundaries before proxy construction.",
+    "central_stem_radius_m": 0.021361133086379686,
+    "broad_radius_threshold_m": 0.04272226617275937
+  },
+  "components": [
+    {
+      "name": "base",
+      "z_range_m": [
+        -0.81547641,
+        -0.77941509
+      ],
+      "center_xy_m": [
+        0.0023747850000000043,
+        0.016203955
+      ],
+      "source_max_radius_m": 0.1035422371152384,
+      "polygon_circumradius_m": 0.10557176905496446,
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 0.0012305264441236801,
+      "mass_kg": 2.8,
+      "com_m": [
+        0.0023747850000000064,
+        0.016203954999999996,
+        -0.7974457499999996
+      ],
+      "inertia_at_component_com_kg_m2": [
+        [
+          0.007907285254267963,
+          -4.366720670494092e-19,
+          -2.794701229116219e-17
+        ],
+        [
+          -4.366720670494092e-19,
+          0.007907285254267963,
+          2.3128561896134224e-17
+        ],
+        [
+          -2.794701229116219e-17,
+          2.3128561896134224e-17,
+          0.015207641085466532
+        ]
+      ],
+      "collision_mesh": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/assets/floorlamp_base_collision.obj",
+      "sha256": "8ede9273b1c6f01e1e40edbe73d7353c21bc2e81fe6e12339097bd55eb2c1d76",
+      "clipped_triangle_point_count": 33534,
+      "triangle_coverage_max_halfspace_violation_m": -1.0000000000287557e-06
+    },
+    {
+      "name": "stem",
+      "z_range_m": [
+        -0.77941509,
+        0.7502997699999999
+      ],
+      "center_xy_m": [
+        -0.0022443004518841354,
+        0.0002288019050755482
+      ],
+      "source_max_radius_m": 0.029071123813627617,
+      "polygon_circumradius_m": 0.029641680390712216,
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 0.004114777357461979,
+      "mass_kg": 0.6,
+      "com_m": [
+        -0.0022443004518841354,
+        0.0002288019050755486,
+        -0.01455766000000006
+      ],
+      "inertia_at_component_com_kg_m2": [
+        [
+          0.11713013388753571,
+          -0.0,
+          -1.5438859876310942e-20
+        ],
+        [
+          -0.0,
+          0.11713013388753572,
+          -1.3267770206204717e-20
+        ],
+        [
+          -1.5438859876310942e-20,
+          -1.3267770206204717e-20,
+          0.00025690059824549216
+        ]
+      ],
+      "collision_mesh": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/assets/floorlamp_stem_collision.obj",
+      "sha256": "4fd27b72eda53d493c1733d6389ec50066637904b73aa82c0ddc9727a390d00c",
+      "clipped_triangle_point_count": 37249,
+      "triangle_coverage_max_halfspace_violation_m": -1.0000000000287557e-06
+    },
+    {
+      "name": "shade",
+      "z_range_m": [
+        0.7502997699999999,
+        0.76942663
+      ],
+      "center_xy_m": [
+        0.004123785000000005,
+        -0.008459509999999996
+      ],
+      "source_max_radius_m": 0.11439531572604109,
+      "polygon_circumradius_m": 0.1166374720458787,
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 0.000796700212385548,
+      "mass_kg": 0.6,
+      "com_m": [
+        0.004123785000000001,
+        -0.008459509999999998,
+        0.7598631999999952
+      ],
+      "inertia_at_component_com_kg_m2": [
+        [
+          0.0020071623636803023,
+          -4.4852758800317604e-20,
+          -3.572273056451963e-17
+        ],
+        [
+          -4.4852758800317604e-20,
+          0.0020071623636803426,
+          2.5516236117514018e-17
+        ],
+        [
+          -3.572273056451963e-17,
+          2.5516236117514018e-17,
+          0.003977733398863728
+        ]
+      ],
+      "collision_mesh": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/assets/floorlamp_shade_collision.obj",
+      "sha256": "84b730959ce406a049733d954390b5a058cfee71c47fe79cde6a78bb439ddf20",
+      "clipped_triangle_point_count": 36945,
+      "triangle_coverage_max_halfspace_violation_m": -1.0000000000287557e-06
+    }
+  ],
+  "total_mass_kg": 4.0,
+  "com_m": [
+    0.0019442721822173843,
+    0.010108162285761328,
+    -0.44641619400000043
+  ],
+  "inertia_kg_m2": [
+    [
+      1.4574020015496858,
+      -7.895250588330364e-06,
+      -6.899471306080697e-05
+    ],
+    [
+      -7.895250588330364e-06,
+      1.4570464366973201,
+      0.02199002148608389
+    ],
+    [
+      -6.899471306080697e-05,
+      0.02199002148608389,
+      0.0198256311463454
+    ]
+  ],
+  "inertia_eigenvalues": [
+    0.01948925093678211,
+    1.4573792878226162,
+    1.457405530633953
+  ],
+  "friction": 0.6,
+  "restitution": 0.0,
+  "rolling_friction": 0.001,
+  "torsion_friction": 0.01,
+  "free_actor": true,
+  "gravity_enabled": true,
+  "object_actuators": 0,
+  "proxy_source_vertex_coverage_fraction": 1.0,
+  "triangle_coverage_verified": true,
+  "triangle_coverage_method": "All vertices of each source triangle clipped to each Z slab satisfy that slab's convex collider halfspaces. Convexity proves coverage of entire clipped polygons.",
+  "initialization": {
+    "reference_position_m": [
+      -0.3661649297742975,
+      0.14886239709040336,
+      0.8093257248401642
+    ],
+    "reference_quaternion_xyzw": [
+      -0.002643244475909831,
+      -0.0036649537311808553,
+      0.9274446620630159,
+      0.3739331226083178
+    ],
+    "original_visual_floor_gap_m": -0.0066667435342741,
+    "original_proxy_floor_gap_m": -0.007208915489605228,
+    "upward_floor_correction_m": 0.009208915489605228,
+    "corrected_proxy_floor_gap_m": 0.002,
+    "minimum_initial_gap_m": 0.002,
+    "object_linear_velocity_m_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "object_angular_velocity_rad_s": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "reference_floor_clearance": {
+    "frame_count": 501,
+    "fps": 120,
+    "endpoint_duration_s": 4.166666666666667,
+    "time_basis": "frame / 120; source_time_s retained separately in CSV",
+    "visual_min_m": -0.0068924781458674644,
+    "visual_max_m": 0.34095489410445445,
+    "proxy_min_m": -0.007434650079207961,
+    "proxy_max_m": 0.3404127222291662,
+    "threshold_m": 0.02,
+    "proxy_airborne_intervals": [
+      {
+        "first_frame": 81,
+        "last_frame": 490,
+        "start_s": 0.675,
+        "end_s": 4.083333333333333,
+        "sample_count": 410,
+        "endpoint_duration_s": 3.408333333333333
+      }
+    ],
+    "visual_airborne_intervals": [
+      {
+        "first_frame": 81,
+        "last_frame": 490,
+        "start_s": 0.675,
+        "end_s": 4.083333333333333,
+        "sample_count": 410,
+        "endpoint_duration_s": 3.408333333333333
+      }
+    ],
+    "interpretation": "Sampled reference geometry above floor only; not proof of robot contact or successful physical support. Initial correction is not applied to the full reference trajectory."
+  },
+  "limitations": [
+    "Mass 4 kg, 70/15/15 percent base/stem/shade split, and friction 0.6 are assumed; no measured inertial/material metadata.",
+    "Colliders conservatively enclose mesh; stem proxy radius may exceed local shaft radius, affecting hand contact.",
+    "One rigid body, zero joints, no object actuator. Free actor/gravity settings must also be applied by simulator loader.",
+    "Only initial upward floor correction is permitted. Object starts with zero linear/angular velocity; no trajectory forcing."
+  ],
+  "copied_from": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_0_contact_foot/reports/asset_profile.json",
+  "runtime_relocation_note": "Parent renamedstep_2 tostep_2_contact; derived local paths refreshed, geometry unchanged."
+}

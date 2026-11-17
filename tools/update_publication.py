@@ -7,7 +7,7 @@ pick='pick_place_001/demo_object_base_policy/'
 for stage in ['step_2_contact','step_2_contact/arm_smoothing','step_3_transition']:
     patterns.extend([pick+stage+'/scripts/*.py',pick+stage+'/assets/*'])
 task='pick_place_001/residual_policy/after_tuning/'
-patterns.extend([task+'scripts/*.py',task+'tests/*.py',task+'*.sh',task+'README.md',task+'reports/latest_training_curves.json',task+'reports/latest_training_curves.png'])
+patterns.extend([task+'assets/*',task+'scripts/*.py',task+'tests/*.py',task+'*.sh',task+'README.md',task+'reports/latest_training_curves.json',task+'reports/latest_training_curves.png'])
 fixed=[]
 for ref in json.loads((root/'publication/reference_catalog.json').read_text())['references']:
     fixed.extend([ref['motion'],ref['object_motion'],ref['mesh']])
@@ -32,7 +32,7 @@ selected.update(['.gitignore','publication/files.txt','publication/content_manif
 # Machine-updated validation/publishing state is tracked, but excluded from
 # content hashes to avoid a circular report -> manifest -> report dependency.
 dynamic={'publication/validation.json','publication/github_status.json','publication/content_manifest.json'}
-lines=['# Curated publication: every tracked file must be explicitly listed.','# Runtime outputs, SDKs, caches, state, auth tools and backups stay local.','*','!*/']
+lines=['# Curated publication: every tracked file must be explicitly listed.','# Runtime outputs, SDKs, caches, state, auth tools and backups stay local.','*','!*/','/.verification/','/.tools/','/.runtime/','/.cache/','/archive/','/outputs/']
 lines.extend('!/'+name for name in sorted(selected))
 (root/'.gitignore').write_text('\n'.join(lines)+'\n')
 (root/'publication/files.txt').write_text('\n'.join(sorted(selected))+'\n')

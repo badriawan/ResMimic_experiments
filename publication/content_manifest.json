@@ -6,8 +6,8 @@
       "bytes": 173
     },
     ".gitignore": {
-      "sha256": "d12fc694884c2e86cefa286a8986a38248a3e499cc49d34f9896afde782eeb04",
-      "bytes": 15155
+      "sha256": "070840820e77ba0dde0b0119b491617c928f1f26f511a6956be63310c0758cb1",
+      "bytes": 15914
     },
     "LICENSE": {
       "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
@@ -673,6 +673,42 @@
       "sha256": "b0002e40156cb673a4f394f7dda41f8790afa3a1af09f8408eb75aa10bb5d14e",
       "bytes": 2310
     },
+    "pick_place_001/residual_policy/after_tuning/assets/asset_profile.json": {
+      "sha256": "d66cee3fc0b2bac41a132299d8bf3470dafdcc44f8df8ef78dc3a514954c329a",
+      "bytes": 8951
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/collider_vertices.npz": {
+      "sha256": "4a55a33cf8beda744b2e76340d95dce7d46d4ea43e54b14e5193904fa3db960b",
+      "bytes": 2574
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/floorlamp_base_collision.obj": {
+      "sha256": "8ede9273b1c6f01e1e40edbe73d7353c21bc2e81fe6e12339097bd55eb2c1d76",
+      "bytes": 1821
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/floorlamp_physical.urdf": {
+      "sha256": "bb335281f04b38453aabdf29a000647fc9b156c431ef4487882245701d77d10b",
+      "bytes": 873
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/floorlamp_shade_collision.obj": {
+      "sha256": "84b730959ce406a049733d954390b5a058cfee71c47fe79cde6a78bb439ddf20",
+      "bytes": 1803
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/floorlamp_stem_collision.obj": {
+      "sha256": "4fd27b72eda53d493c1733d6389ec50066637904b73aa82c0ddc9727a390d00c",
+      "bytes": 1809
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/floorlamp_visual.obj": {
+      "sha256": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506",
+      "bytes": 1300610
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/oracle_fixture.urdf": {
+      "sha256": "f434b3aab7c62d2ffc1c59ee11354b67f52395adc32388a08540cc435ba928c4",
+      "bytes": 213
+    },
+    "pick_place_001/residual_policy/after_tuning/assets/oracle_robot_lamp.urdf": {
+      "sha256": "d07270459884430753f25c2e54e7ebac27a7f6aa49771184b55aafb47dfa4163",
+      "bytes": 35320
+    },
     "pick_place_001/residual_policy/after_tuning/evaluations/model_5000_20261114T225204_685687Z/artifact_validation.json": {
       "sha256": "f1b562e888f6a35fb6cdf1d8d645ca0090d1928ddad8a296cebb9fa143828a6b",
       "bytes": 244
@@ -806,8 +842,8 @@
       "bytes": 1117
     },
     "publication/files.txt": {
-      "sha256": "2e163cb5ecbc3635769fc6150a053981e214f84cfbdd23c5b2e52145a26e8e20",
-      "bytes": 14559
+      "sha256": "17c907ea993e0db13205615cb9583ce75ed41a1ffb2f8668890c57c38facf5e0",
+      "bytes": 15235
     },
     "publication/input_manifest.json": {
       "sha256": "55d97ea63adfb6d0483de550fe56b35b0cc7ac5f5b92ca1d9a3588ec88022c14",
@@ -878,8 +914,8 @@
       "bytes": 678
     },
     "tools/update_publication.py": {
-      "sha256": "8c5b756e7608db3087015bf15722af15bf5ddcd2e99934d0bce1de14d4ea7a7a",
-      "bytes": 4185
+      "sha256": "ec5db2e3ac4bbbccb619c8df070cdd6fe689aafa5a07dcdeacca2eb97212d47c",
+      "bytes": 4278
     }
   },
   "hash_exclusions": [

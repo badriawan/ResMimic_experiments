@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot name="pick_place_001_floorlamp"><link name="floorlamp">
+  <inertial><origin xyz="0.00194427218222 0.0101081622858 -0.446416194"/><mass value="4"/><inertia ixx="1.45740200155" ixy="-7.89525058833e-06" ixz="-6.89947130608e-05" iyy="1.4570464367" iyz="0.0219900214861" izz="0.0198256311463"/></inertial>
+  <visual><geometry><mesh filename="floorlamp_visual.obj" scale="1 1 1"/></geometry><material name="lamp"><color rgba="0.72 0.72 0.75 1"/></material></visual>
+    <collision name="base"><geometry><mesh filename="floorlamp_base_collision.obj" scale="1 1 1"/></geometry></collision>
+    <collision name="stem"><geometry><mesh filename="floorlamp_stem_collision.obj" scale="1 1 1"/></geometry></collision>
+    <collision name="shade"><geometry><mesh filename="floorlamp_shade_collision.obj" scale="1 1 1"/></geometry></collision>
+</link></robot>
