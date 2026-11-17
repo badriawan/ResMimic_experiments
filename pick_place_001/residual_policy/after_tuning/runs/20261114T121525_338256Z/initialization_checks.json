@@ -1,0 +1,14 @@
+{
+  "observation_layout": true,
+  "base_layout": true,
+  "frozen_base": true,
+  "optimizer_excludes_base_teacher": true,
+  "residual_actor_optimized": true,
+  "no_teacher": true,
+  "future_masked": true,
+  "no_stale_episode_report": true,
+  "initial_finite": true,
+  "free_floorlamp": true,
+  "forward_finite": true,
+  "object_reward_finite": true
+}

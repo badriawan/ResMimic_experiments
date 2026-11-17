@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": {
+    "one_motion": true,
+    "fps_matches_export": true,
+    "duration_matches": true,
+    "all_outputs_finite": true,
+    "robot_shape": true,
+    "object_shapes": true,
+    "reference_adapter_fixtures": true,
+    "root_position_linear_agrees": true,
+    "joints_linear_agree": true,
+    "object_position_linear_agrees": true,
+    "root_object_slerp_agrees": true,
+    "clock_control_time_matches_native": true,
+    "actual_loader_cached_hold_robot_velocities_zero": true,
+    "actual_loader_returned_hold_robot_velocities_zero": true,
+    "actual_loader_hold_object_cached_pose_exact": true,
+    "actual_loader_hold_object_derived_velocity_float32_zero": true,
+    "actual_loader_initial_object_derived_velocity_exact_zero": true,
+    "baseline_mapped_native_positions_agree": true,
+    "baseline_mapped_native_slerp_agrees": true
+  },
+  "samples": 13001,
+  "exported_fps": 480.0,
+  "max_errors": {
+    "root_position_m": 5.12240714956036e-07,
+    "dof_rad": 6.380447161540709e-06,
+    "object_position_m": 4.637898227688453e-07,
+    "quaternion_geodesic_rad": [
+      1.6660261648243217e-06,
+      5.054643025248549e-07
+    ]
+  },
+  "numerical_tolerances": {
+    "position_m": 2e-06,
+    "joint_rad": 4.777061387584111e-05,
+    "quaternion_geodesic_rad": 2e-05,
+    "note": "A-priori float32 phase/time quantization bound4eps*duration*max_joint_speed, at least1e-5rad; quaternion2e-5rad=0.00115deg"
+  },
+  "conditioning_diagnostics": {
+    "hold_velocity_query_interval": "0 <= t <= hold_s; boundary central stencil also inspected and measured exactly zero",
+    "hold_end_boundary_robot_cached_max_abs": {
+      "root_linear_velocity": 0.0,
+      "root_angular_velocity": 0.0,
+      "joint_velocity": 0.0
+    },
+    "source_clock_file": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/transition_clock.npz",
+    "source_start_s": 0.0,
+    "mapped_native_pose_max_errors": {
+      "root_position_m": 4.76837158203125e-07,
+      "joint_position_rad": 4.664063453674316e-06,
+      "object_position_m": 3.5762786865234375e-07
+    },
+    "mapped_native_quaternion_geodesic_rad": [
+      1.6589088809209687e-06,
+      4.907584865154795e-07
+    ],
+    "hold_robot_cached_max_abs": {
+      "root_linear_velocity": 0.0,
+      "root_angular_velocity": 0.0,
+      "joint_velocity": 0.0
+    },
+    "hold_robot_returned_max_abs": {
+      "root_linear": 0.0,
+      "root_angular": 0.0,
+      "joint": 0.0
+    },
+    "object_velocity_API": "MotionLibHOI returns no object velocities; finite differences of actual returned object poses are used.",
+    "hold_object_derived_linear_max_component_m_s": 0.0,
+    "hold_object_derived_angular_max_component_rad_s": 0.0,
+    "object_float32_zero_tolerances": {
+      "linear_m_s": 0.000457763671875,
+      "angular_rad_s": 0.000457763671875
+    },
+    "baseline_initial_loader_root_speed_m_s": 0.5519119501113892,
+    "baseline_initial_loader_joint_rms_rad_s": 4.539466381072998,
+    "note": "Compared positions at mapped source phase; original baseline velocities intentionally differ through hold/ramp. Frame48 is an interior source knot with central-difference baseline derivatives; cropped output frame0 is a boundary preceded by an explicit stationary hold. Baseline central derivative may differ from the source forward finite difference. No policy or physical success claim.",
+    "baseline_source": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.pkl"
+  },
+  "quaternion_convention": "XYZW on disk; actual loader outputs normalized XYZW",
+  "endpoint_query": "Clamped to motion length-1e-5 to avoid native looping",
+  "input_sha256": {
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/interpose_floorlamp_g1_transition.pkl": "4f5597f12544d8d93546c1f12848a5f87ad24638088c58a07aeb03b2a6683849",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/interpose_floorlamp_g1_transition.npz": "04f42fe7f1876a7a7db4f4f22f199cade7a2eabac5b4bf38f5b411b04d967c58",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/scripts/foot_reference_loader.py": "f0f9a00954628961abe9c14158b4ed0762aeeda7e56129e5936f726b6e3ece83",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/transition_clock.npz": "0ae3921a42213bd9637da73fee79b3b9c6d0537b56d02516644c97f752513d70",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.pkl": "f3905b738068cfa116ae5a8f1ae674c07f9a6e61cbd90dcc5c7fe44634d3af9b",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.npz": "ddb9689312cca554e2a474b5a87b0bf2f8d98bd19d1557e66ed9b727e30c1029"
+  },
+  "simulator_executed": false,
+  "policy_executed": false,
+  "training_executed": false
+}

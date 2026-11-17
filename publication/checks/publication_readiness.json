@@ -1,0 +1,37 @@
+{
+  "status": "PASS_PUBLICATION_CPU_PREPARATION",
+  "validation": {
+    "config": "PASS",
+    "cpu_fixture_checks": 21,
+    "timeout_regression_checks": 7,
+    "portable_path_checks": 7,
+    "mock_launcher_tests": 6,
+    "python38_syntax": "PASS",
+    "shell_syntax": "PASS",
+    "cli_help": "PASS"
+  },
+  "changed_source_sha256": {
+    "scripts/common.py": "0d0dd0d1cbd8a6df392b75176980168883b554707460973165c30f5dc8340b76",
+    "scripts/baseline_config.py": "1a30e4123aae9e77c20bd8bf7ea2cda2362eb8038c24e4ea2dccab6d088ad6cb",
+    "scripts/residual_env.py": "aa1ca2024113abc4d8b7569e55835aa776458bb8ff310beb98cfde5178c5e5db",
+    "scripts/train_residual.py": "0ab5b95c684ed7f4401c86b445d400261751ed394a4ed440eda23bf8318e9b39",
+    "scripts/render_policy.py": "0a09105a7498b27eb9ef61f7e7de3069477af88b2e0434e9ce07c35bfb26e132",
+    "scripts/background_job.py": "0e9c4bf11020982ce71ff1b0d01737b2c01677be8de23112de621de344b563a5",
+    "scripts/test_background_job.py": "593995b17a94f01fc91648525062c52ede544387b4d63ba9314119e613d8de8a",
+    "tests/check_timeout_transition.py": "7b5d8e19fa20d30186c2d0b041a7055623779c37b43cffdff63fb18769e04d52",
+    "tests/check_portable_paths.py": "4a1f416d40a0285397480683aa68d2997f0da3a5b32e756b27a93f6b18ce484a",
+    "tests/check_cpu.py": "3280e0bf631e2cd30bdec14e5386ea7fecbb1aa7c10a74ebb49b3fedadb8c54b",
+    "launch_python.sh": "461e63f22dbd33b471a5d932bbd37f1972d82835972162b941c9ba96134d1658"
+  },
+  "historical_runs_modified": false,
+  "new_simulator_executed": false,
+  "new_training_executed": false,
+  "new_tensorboard_started": false,
+  "optimizer_updates": 0,
+  "timeout_fix": "Fresh per-transition snapshot masked by the returned done tensor; endpoint then ordinary transitions tested.",
+  "backup_root": "archive/pre_publication/after_tuning (relative to custom_data)",
+  "limitations": [
+    "No GPU construction, PhysX rollout, PPO backward/update, TensorBoard service or full installation was executed for these publication changes.",
+    "The historical5000iteration checkpoint remains trained with the previous timeout bug and remains unsuccessful at physical lifting."
+  ]
+}

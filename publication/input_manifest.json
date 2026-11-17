@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "inputs/pick_place_001/motion.npy",
+      "sha256": "5ae1c1f0cc26540ae1187cd9c853626184fed3f8fcbef9ccaef3d0cb7d2ac5e2",
+      "bytes": 133298,
+      "origin": "User-generated InterPose experiment output"
+    },
+    {
+      "path": "inputs/pick_place_001/clock.npz",
+      "sha256": "23d57fd67495b92d83ba1ca1ff31f4f639daa93bdbd88fbccf33c0e0b32c895a",
+      "bytes": 6516,
+      "origin": "User-generated InterPose experiment output"
+    },
+    {
+      "path": "inputs/lift_hold_001/motion.npy",
+      "sha256": "3e8d0512cf95360a801855b5ada17c97b6c9f8104cfbdff056ba9f23bae21930",
+      "bytes": 391725,
+      "origin": "User-generated InterPose experiment output"
+    },
+    {
+      "path": "inputs/lift_hold_001/clock.npz",
+      "sha256": "111308bb57b272d1990f4279a54f858d96380229b5b0be780008dd253959819f",
+      "bytes": 524752,
+      "origin": "User-generated InterPose experiment output"
+    },
+    {
+      "path": "inputs/assets/floorlamp_rest.ply",
+      "sha256": "c012a69bfb37542ad099ff087b17059b2622a47d2e04e09d67403ea929470e4a",
+      "bytes": 1265005,
+      "origin": "InterPose floorlamp rest geometry; see THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "inputs/pick_place_001/upper_body_seed.pkl",
+      "sha256": "618caa14cba42ff0113780c7616b8218417b800b4028241ef0bd2b1e87b37e4e",
+      "bytes": 152380,
+      "origin": "Accepted earlier upper-body/root seed for the clip-specific foot correction; preserves the prior 7.5 cm pelvis correction."
+    }
+  ],
+  "notes": [
+    "Original bytes preserved.",
+    "The two datasets use different clocks and scene scales.",
+    "Data/geometry redistribution is not relicensed by the code license."
+  ]
+}

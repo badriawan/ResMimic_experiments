@@ -1,0 +1,14 @@
+# Core versions observed in the validated geometry environment.
+# This is not a complete transitive lockfile; install the pinned GMR checkout too.
+-r geometry.txt
+numpy==2.4.6
+scipy==1.17.1
+mujoco==3.5.0
+mink==1.3.0
+daqp==0.10.3
+trimesh==5.2.0
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+matplotlib==3.11.2
+qpsolvers==4.13.0
+torch==2.14.1

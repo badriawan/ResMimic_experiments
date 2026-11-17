@@ -1,0 +1,871 @@
+{
+  "status": "PASS_ARTIFACT_AND_STARTUP_CONSISTENCY_CHECKS",
+  "checks": {
+    "probe_baseline": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "video_frames_match": true
+    },
+    "probe_A": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "pre_physics_robot_velocities_zero": true,
+      "pre_physics_object_velocities_zero": true,
+      "joint_reset_matches_reference": true,
+      "reference_hold_velocity_zero": true,
+      "video_frames_match": true
+    },
+    "probe_B": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "pre_physics_robot_velocities_zero": true,
+      "pre_physics_object_velocities_zero": true,
+      "joint_reset_matches_reference": true,
+      "reference_hold_velocity_zero": true,
+      "video_frames_match": true
+    },
+    "full_baseline": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "video_frames_match": true
+    },
+    "full_A": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "pre_physics_robot_velocities_zero": true,
+      "pre_physics_object_velocities_zero": true,
+      "joint_reset_matches_reference": true,
+      "reference_hold_velocity_zero": true,
+      "video_frames_match": true
+    },
+    "full_B": {
+      "finite": true,
+      "samples_match": true,
+      "checkpoint_matches": true,
+      "inputs_preserved": true,
+      "future_features_masked": true,
+      "observations_shape": true,
+      "free_object": true,
+      "two_actors": true,
+      "zero_post_init_pose_setters": true,
+      "saved_root_matches_samples": true,
+      "physical_stops_retained": true,
+      "training_disabled": true,
+      "pre_physics_robot_velocities_zero": true,
+      "pre_physics_object_velocities_zero": true,
+      "joint_reset_matches_reference": true,
+      "reference_hold_velocity_zero": true,
+      "video_frames_match": true
+    }
+  },
+  "runs": {
+    "probe_baseline": {
+      "status": "COMPLETED_STARTUP_PROBE",
+      "stop_reason": "probe_time_complete",
+      "steps": 100,
+      "control_endpoint_s": 2.0000000949949026,
+      "exported_duration_s": 4.166666666666667,
+      "unqueried_tail_s": null,
+      "initial_root_speed_m_s": 0.6552178859710693,
+      "initial_joint_velocity_rms_rad_s": 4.497912883758545,
+      "initial_root_position_error_m": 0.0011330500710755587,
+      "initial_joint_position_rms_error_rad": 0.008955813013017178,
+      "final": {
+        "root_xy_tracking_error_m": 0.727824330329895,
+        "joint_tracking_rms_rad": 0.2544291913509369,
+        "object_position_error_m": 0.9743350744247437,
+        "object_tilt_deg": 28.428685862290823
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 101,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.10000000474974513,
+          "root_xy_tracking_error_m": 0.01730014570057392,
+          "joint_tracking_rms_rad": 0.09776622802019119,
+          "object_position_error_m": 0.01957416534423828,
+          "object_tilt_deg": 1.4629263352023687
+        },
+        {
+          "control_time_s": 0.5000000237487257,
+          "source_reference_time_s": 0.5000000237487257,
+          "root_xy_tracking_error_m": 0.07056038081645966,
+          "joint_tracking_rms_rad": 0.10554572939872742,
+          "object_position_error_m": 0.08863130211830139,
+          "object_tilt_deg": 6.41779818937533
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.740000035148114,
+          "root_xy_tracking_error_m": 0.09547587484121323,
+          "joint_tracking_rms_rad": 0.11942590773105621,
+          "object_position_error_m": 0.12566573917865753,
+          "object_tilt_deg": 7.82515521074766
+        },
+        {
+          "control_time_s": 1.0000000474974513,
+          "source_reference_time_s": 1.0000000474974513,
+          "root_xy_tracking_error_m": 0.14044074714183807,
+          "joint_tracking_rms_rad": 0.13484427332878113,
+          "object_position_error_m": 0.23493772745132446,
+          "object_tilt_deg": 9.092030151998369
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 1.7400000826455653,
+          "root_xy_tracking_error_m": 0.5265035033226013,
+          "joint_tracking_rms_rad": 0.23948171734809875,
+          "object_position_error_m": 0.7481820583343506,
+          "object_tilt_deg": 16.24991664278762
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 2.0000000949949026,
+          "root_xy_tracking_error_m": 0.727824330329895,
+          "joint_tracking_rms_rad": 0.2544291913509369,
+          "object_position_error_m": 0.9743350744247437,
+          "object_tilt_deg": 28.428685862290823
+        }
+      ],
+      "input_result_sha256": "3bd53f7c9db149aabc5ec5fa7d178dbbce3b7337d0543f97a0c5a1a603aba8ea",
+      "rollout_sha256": "0a3aa42af2fe4f77d68b19cdb89d05ca54a922d5501fbc37d614452e818b75ae"
+    },
+    "probe_A": {
+      "status": "COMPLETED_STARTUP_PROBE",
+      "stop_reason": "probe_time_complete",
+      "steps": 100,
+      "control_endpoint_s": 2.0000000949949026,
+      "exported_duration_s": 5.416666666666667,
+      "unqueried_tail_s": null,
+      "initial_root_speed_m_s": 0.15621095895767212,
+      "initial_joint_velocity_rms_rad_s": 1.0879029035568237,
+      "initial_root_position_error_m": 3.239839861635119e-05,
+      "initial_joint_position_rms_error_rad": 0.0017447680002078414,
+      "final": {
+        "root_xy_tracking_error_m": 0.028714746236801147,
+        "joint_tracking_rms_rad": 0.10762596875429153,
+        "object_position_error_m": 0.05693504959344864,
+        "object_tilt_deg": 0.7295141014960053
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 101,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.0,
+          "root_xy_tracking_error_m": 0.004092641640454531,
+          "joint_tracking_rms_rad": 0.060033202171325684,
+          "object_position_error_m": 0.009195526130497456,
+          "object_tilt_deg": 0.6345355950185241
+        },
+        {
+          "control_time_s": 0.5000000237487257,
+          "source_reference_time_s": 0.0,
+          "root_xy_tracking_error_m": 0.01911996491253376,
+          "joint_tracking_rms_rad": 0.0709957554936409,
+          "object_position_error_m": 0.0045713079161942005,
+          "object_tilt_deg": 0.3122647753743584
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.0,
+          "root_xy_tracking_error_m": 0.01712270826101303,
+          "joint_tracking_rms_rad": 0.07295676320791245,
+          "object_position_error_m": 0.0035353307612240314,
+          "object_tilt_deg": 0.22507006095551116
+        },
+        {
+          "control_time_s": 1.0000000474974513,
+          "source_reference_time_s": 0.007080083094103748,
+          "root_xy_tracking_error_m": 0.012573079206049442,
+          "joint_tracking_rms_rad": 0.07456231117248535,
+          "object_position_error_m": 0.002113048220053315,
+          "object_tilt_deg": 0.056886663572290594
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 0.4900001082862977,
+          "root_xy_tracking_error_m": 0.030876442790031433,
+          "joint_tracking_rms_rad": 0.10057104378938675,
+          "object_position_error_m": 0.02346152998507023,
+          "object_tilt_deg": 1.5451187481282904
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 0.7500000949949026,
+          "root_xy_tracking_error_m": 0.028714746236801147,
+          "joint_tracking_rms_rad": 0.10762596875429153,
+          "object_position_error_m": 0.05693504959344864,
+          "object_tilt_deg": 0.7295141014960053
+        }
+      ],
+      "input_result_sha256": "0f44582e4c991f628d309618f47800fbbab46d02c42881eb73733b8947e8562f",
+      "rollout_sha256": "0669b0973e2a0915c91a35ae1075cf933c385995b331d1f6733d32d2dec85c50"
+    },
+    "probe_B": {
+      "status": "COMPLETED_STARTUP_PROBE",
+      "stop_reason": "probe_time_complete",
+      "steps": 100,
+      "control_endpoint_s": 2.0000000949949026,
+      "exported_duration_s": 5.316666666666666,
+      "unqueried_tail_s": null,
+      "initial_root_speed_m_s": 0.17820623517036438,
+      "initial_joint_velocity_rms_rad_s": 1.0768508911132812,
+      "initial_root_position_error_m": 5.625248377327807e-05,
+      "initial_joint_position_rms_error_rad": 0.0017540586413815618,
+      "final": {
+        "root_xy_tracking_error_m": 0.025035174563527107,
+        "joint_tracking_rms_rad": 0.11585778743028641,
+        "object_position_error_m": 0.08294673264026642,
+        "object_tilt_deg": 1.4938877450825985
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 101,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.1,
+          "root_xy_tracking_error_m": 0.002244642935693264,
+          "joint_tracking_rms_rad": 0.08324309438467026,
+          "object_position_error_m": 0.009516154415905476,
+          "object_tilt_deg": 0.6617584593277047
+        },
+        {
+          "control_time_s": 0.5000000237487257,
+          "source_reference_time_s": 0.1,
+          "root_xy_tracking_error_m": 0.025090564042329788,
+          "joint_tracking_rms_rad": 0.08899372816085815,
+          "object_position_error_m": 0.025449197739362717,
+          "object_tilt_deg": 1.7867366070557755
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.1,
+          "root_xy_tracking_error_m": 0.034179653972387314,
+          "joint_tracking_rms_rad": 0.09282023459672928,
+          "object_position_error_m": 0.029004346579313278,
+          "object_tilt_deg": 2.0374058510810285
+        },
+        {
+          "control_time_s": 1.0000000474974513,
+          "source_reference_time_s": 0.10708008309410376,
+          "root_xy_tracking_error_m": 0.030172837898135185,
+          "joint_tracking_rms_rad": 0.09325943887233734,
+          "object_position_error_m": 0.02459033764898777,
+          "object_tilt_deg": 1.7253873123736783
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 0.5900001082862977,
+          "root_xy_tracking_error_m": 0.019596204161643982,
+          "joint_tracking_rms_rad": 0.10202188044786453,
+          "object_position_error_m": 0.02652512863278389,
+          "object_tilt_deg": 0.34961479921803135
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 0.8500000949949026,
+          "root_xy_tracking_error_m": 0.025035174563527107,
+          "joint_tracking_rms_rad": 0.11585778743028641,
+          "object_position_error_m": 0.08294673264026642,
+          "object_tilt_deg": 1.4938877450825985
+        }
+      ],
+      "input_result_sha256": "1fee02e241d1b6f4ac0effa3e82bf738c340b02692cae5321f55c25a00fec1c9",
+      "rollout_sha256": "ee08588c1ba4d5fa99aa4bb11bdef55aea0230f25f657e9e9c8ce33d25c13bfa"
+    },
+    "full_baseline": {
+      "status": "STOPPED",
+      "stop_reason": "source_clip_complete",
+      "steps": 208,
+      "control_endpoint_s": 4.160000197589397,
+      "exported_duration_s": 4.166666666666667,
+      "unqueried_tail_s": 0.006666469077269532,
+      "initial_root_speed_m_s": 0.6552178859710693,
+      "initial_joint_velocity_rms_rad_s": 4.497912883758545,
+      "initial_root_position_error_m": 0.0011330500710755587,
+      "initial_joint_position_rms_error_rad": 0.008955813013017178,
+      "final": {
+        "root_xy_tracking_error_m": 1.6826136112213135,
+        "joint_tracking_rms_rad": 0.14394263923168182,
+        "object_position_error_m": 2.9757728576660156,
+        "object_tilt_deg": 90.47707938845733
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 209,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.10000000474974513,
+          "root_xy_tracking_error_m": 0.01730014570057392,
+          "joint_tracking_rms_rad": 0.09776622802019119,
+          "object_position_error_m": 0.01957416534423828,
+          "object_tilt_deg": 1.4629263352023687
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.740000035148114,
+          "root_xy_tracking_error_m": 0.09547587484121323,
+          "joint_tracking_rms_rad": 0.11942590773105621,
+          "object_position_error_m": 0.12566573917865753,
+          "object_tilt_deg": 7.82515521074766
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 1.7400000826455653,
+          "root_xy_tracking_error_m": 0.5265035033226013,
+          "joint_tracking_rms_rad": 0.23948171734809875,
+          "object_position_error_m": 0.7481820583343506,
+          "object_tilt_deg": 16.24991664278762
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 2.0000000949949026,
+          "root_xy_tracking_error_m": 0.727824330329895,
+          "joint_tracking_rms_rad": 0.2544291913509369,
+          "object_position_error_m": 0.9743350744247437,
+          "object_tilt_deg": 28.428685862290823
+        },
+        {
+          "control_time_s": 3.000000142492354,
+          "source_reference_time_s": 3.000000142492354,
+          "root_xy_tracking_error_m": 1.404962420463562,
+          "joint_tracking_rms_rad": 0.21004517376422882,
+          "object_position_error_m": 2.3940505981445312,
+          "object_tilt_deg": 88.98970975268118
+        },
+        {
+          "control_time_s": 4.000000189989805,
+          "source_reference_time_s": 4.000000189989805,
+          "root_xy_tracking_error_m": 1.7212252616882324,
+          "joint_tracking_rms_rad": 0.17528408765792847,
+          "object_position_error_m": 2.941532611846924,
+          "object_tilt_deg": 90.50101581672467
+        }
+      ],
+      "input_result_sha256": "2927fc360f071c6c4bb9dce6f63629d6c3d52b95c400754dc303e50bdf18b07b",
+      "rollout_sha256": "4934525c2ce988fc8dfc3c69817a11d0d49f9a30aeb14539e92307adabd1c4ca"
+    },
+    "full_A": {
+      "status": "STOPPED",
+      "stop_reason": "source_clip_complete",
+      "steps": 270,
+      "control_endpoint_s": 5.400000256486237,
+      "exported_duration_s": 5.416666666666667,
+      "unqueried_tail_s": 0.016666410180429914,
+      "initial_root_speed_m_s": 0.15621095895767212,
+      "initial_joint_velocity_rms_rad_s": 1.0879029035568237,
+      "initial_root_position_error_m": 3.239839861635119e-05,
+      "initial_joint_position_rms_error_rad": 0.0017447680002078414,
+      "final": {
+        "root_xy_tracking_error_m": 1.298693060874939,
+        "joint_tracking_rms_rad": 0.1373271346092224,
+        "object_position_error_m": 2.400618076324463,
+        "object_tilt_deg": 89.08770500759933
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 271,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.0,
+          "root_xy_tracking_error_m": 0.004092641640454531,
+          "joint_tracking_rms_rad": 0.060033202171325684,
+          "object_position_error_m": 0.009195526130497456,
+          "object_tilt_deg": 0.6345355950185241
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.0,
+          "root_xy_tracking_error_m": 0.01712270826101303,
+          "joint_tracking_rms_rad": 0.07295676320791245,
+          "object_position_error_m": 0.0035353307612240314,
+          "object_tilt_deg": 0.22507006095551116
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 0.4900001082862977,
+          "root_xy_tracking_error_m": 0.030876442790031433,
+          "joint_tracking_rms_rad": 0.10057104378938675,
+          "object_position_error_m": 0.02346152998507023,
+          "object_tilt_deg": 1.5451187481282904
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 0.7500000949949026,
+          "root_xy_tracking_error_m": 0.028714746236801147,
+          "joint_tracking_rms_rad": 0.10762596875429153,
+          "object_position_error_m": 0.05693504959344864,
+          "object_tilt_deg": 0.7295141014960053
+        },
+        {
+          "control_time_s": 3.000000142492354,
+          "source_reference_time_s": 1.750000142492354,
+          "root_xy_tracking_error_m": 0.21553190052509308,
+          "joint_tracking_rms_rad": 0.18888501822948456,
+          "object_position_error_m": 0.46825626492500305,
+          "object_tilt_deg": 19.860149042624034
+        },
+        {
+          "control_time_s": 4.000000189989805,
+          "source_reference_time_s": 2.750000189989805,
+          "root_xy_tracking_error_m": 0.8308039903640747,
+          "joint_tracking_rms_rad": 0.24340693652629852,
+          "object_position_error_m": 1.6261647939682007,
+          "object_tilt_deg": 88.76176958699509
+        },
+        {
+          "control_time_s": 5.0000002374872565,
+          "source_reference_time_s": 3.7500002374872565,
+          "root_xy_tracking_error_m": 1.2266508340835571,
+          "joint_tracking_rms_rad": 0.1706516146659851,
+          "object_position_error_m": 2.276319742202759,
+          "object_tilt_deg": 89.77007896967801
+        }
+      ],
+      "input_result_sha256": "01b128d443af2b69af8a5f9eddf17f6a56de9bf6fbd5cb1d154d60a0b1576a53",
+      "rollout_sha256": "1d7528d656bed6ab50fd49e8f76188e2e18d410fa6d77a30b052204610e377d9"
+    },
+    "full_B": {
+      "status": "STOPPED",
+      "stop_reason": "source_clip_complete",
+      "steps": 265,
+      "control_endpoint_s": 5.300000251736492,
+      "exported_duration_s": 5.316666666666666,
+      "unqueried_tail_s": 0.01666641493017451,
+      "initial_root_speed_m_s": 0.17820623517036438,
+      "initial_joint_velocity_rms_rad_s": 1.0768508911132812,
+      "initial_root_position_error_m": 5.625248377327807e-05,
+      "initial_joint_position_rms_error_rad": 0.0017540586413815618,
+      "final": {
+        "root_xy_tracking_error_m": 1.2734979391098022,
+        "joint_tracking_rms_rad": 0.16471537947654724,
+        "object_position_error_m": 1.8570902347564697,
+        "object_tilt_deg": 89.27078971173543
+      },
+      "supported_airborne_proxy_samples": 0,
+      "samples": 266,
+      "selected_wall_time_rows": [
+        {
+          "control_time_s": 0.10000000474974513,
+          "source_reference_time_s": 0.1,
+          "root_xy_tracking_error_m": 0.002244642935693264,
+          "joint_tracking_rms_rad": 0.08324309438467026,
+          "object_position_error_m": 0.009516154415905476,
+          "object_tilt_deg": 0.6617584593277047
+        },
+        {
+          "control_time_s": 0.740000035148114,
+          "source_reference_time_s": 0.1,
+          "root_xy_tracking_error_m": 0.034179653972387314,
+          "joint_tracking_rms_rad": 0.09282023459672928,
+          "object_position_error_m": 0.029004346579313278,
+          "object_tilt_deg": 2.0374058510810285
+        },
+        {
+          "control_time_s": 1.7400000826455653,
+          "source_reference_time_s": 0.5900001082862977,
+          "root_xy_tracking_error_m": 0.019596204161643982,
+          "joint_tracking_rms_rad": 0.10202188044786453,
+          "object_position_error_m": 0.02652512863278389,
+          "object_tilt_deg": 0.34961479921803135
+        },
+        {
+          "control_time_s": 2.0000000949949026,
+          "source_reference_time_s": 0.8500000949949026,
+          "root_xy_tracking_error_m": 0.025035174563527107,
+          "joint_tracking_rms_rad": 0.11585778743028641,
+          "object_position_error_m": 0.08294673264026642,
+          "object_tilt_deg": 1.4938877450825985
+        },
+        {
+          "control_time_s": 3.000000142492354,
+          "source_reference_time_s": 1.850000142492354,
+          "root_xy_tracking_error_m": 0.233035147190094,
+          "joint_tracking_rms_rad": 0.19327592849731445,
+          "object_position_error_m": 0.5048466920852661,
+          "object_tilt_deg": 24.146330899835835
+        },
+        {
+          "control_time_s": 4.000000189989805,
+          "source_reference_time_s": 2.8500001899898053,
+          "root_xy_tracking_error_m": 0.8676639199256897,
+          "joint_tracking_rms_rad": 0.17547987401485443,
+          "object_position_error_m": 1.6428804397583008,
+          "object_tilt_deg": 88.91660629047433
+        },
+        {
+          "control_time_s": 5.0000002374872565,
+          "source_reference_time_s": 3.8500002374872566,
+          "root_xy_tracking_error_m": 1.2841459512710571,
+          "joint_tracking_rms_rad": 0.15397392213344574,
+          "object_position_error_m": 1.844683289527893,
+          "object_tilt_deg": 89.14626802865172
+        }
+      ],
+      "input_result_sha256": "f635170a978872bbb1848b5487f686eead27a01b6e2d9721952af8a6aeeef386",
+      "rollout_sha256": "f548edf75826c5e7af90a6818a191b673b49158f1d4359486d29dd163f844267"
+    }
+  },
+  "equal_source_progress": [
+    {
+      "requested_source_reference_time_s": 0.1,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 0.10000000474974513,
+          "actual_source_reference_time_s": 0.10000000474974513,
+          "phase_error_s": 4.749745124987825e-09,
+          "root_xy_tracking_error_m": 0.01730014570057392,
+          "joint_tracking_rms_rad": 0.09776622802019119,
+          "object_position_error_m": 0.01957416534423828,
+          "object_tilt_deg": 1.4629263352023687
+        },
+        "full_A": {
+          "actual_control_time_s": 1.3000000617466867,
+          "actual_source_reference_time_s": 0.10546098986675138,
+          "phase_error_s": 0.005460989866751378,
+          "root_xy_tracking_error_m": 0.018538959324359894,
+          "joint_tracking_rms_rad": 0.08591334521770477,
+          "object_position_error_m": 0.011612877249717712,
+          "object_tilt_deg": 0.7404278474090694
+        },
+        "full_B": {
+          "actual_control_time_s": 0.740000035148114,
+          "actual_source_reference_time_s": 0.1,
+          "phase_error_s": 0.0,
+          "root_xy_tracking_error_m": 0.034179653972387314,
+          "joint_tracking_rms_rad": 0.09282023459672928,
+          "object_position_error_m": 0.029004346579313278,
+          "object_tilt_deg": 2.0374058510810285
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 0.25,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 0.2400000113993883,
+          "actual_source_reference_time_s": 0.2400000113993883,
+          "phase_error_s": -0.009999988600611687,
+          "root_xy_tracking_error_m": 0.0399278923869133,
+          "joint_tracking_rms_rad": 0.12162292748689651,
+          "object_position_error_m": 0.08242026716470718,
+          "object_tilt_deg": 6.162955019816855
+        },
+        "full_A": {
+          "actual_control_time_s": 1.500000071246177,
+          "actual_source_reference_time_s": 0.2570801420740677,
+          "phase_error_s": 0.007080142074067708,
+          "root_xy_tracking_error_m": 0.01904781349003315,
+          "joint_tracking_rms_rad": 0.09401915222406387,
+          "object_position_error_m": 0.010065161623060703,
+          "object_tilt_deg": 0.9520460537835823
+        },
+        "full_B": {
+          "actual_control_time_s": 1.3600000645965338,
+          "actual_source_reference_time_s": 0.24428814418861342,
+          "phase_error_s": -0.005711855811386585,
+          "root_xy_tracking_error_m": 0.020712193101644516,
+          "joint_tracking_rms_rad": 0.09699185192584991,
+          "object_position_error_m": 0.009403493255376816,
+          "object_tilt_deg": 0.8650003497064036
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 0.5,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 0.5000000237487257,
+          "actual_source_reference_time_s": 0.5000000237487257,
+          "phase_error_s": 2.3748725652694702e-08,
+          "root_xy_tracking_error_m": 0.07056038081645966,
+          "joint_tracking_rms_rad": 0.10554572939872742,
+          "object_position_error_m": 0.08863130211830139,
+          "object_tilt_deg": 6.41779818937533
+        },
+        "full_A": {
+          "actual_control_time_s": 1.7400000826455653,
+          "actual_source_reference_time_s": 0.4900001082862977,
+          "phase_error_s": -0.009999891713702302,
+          "root_xy_tracking_error_m": 0.030876442790031433,
+          "joint_tracking_rms_rad": 0.10057104378938675,
+          "object_position_error_m": 0.02346152998507023,
+          "object_tilt_deg": 1.5451187481282904
+        },
+        "full_B": {
+          "actual_control_time_s": 1.6400000778958201,
+          "actual_source_reference_time_s": 0.49031965747379713,
+          "phase_error_s": -0.009680342526202868,
+          "root_xy_tracking_error_m": 0.02187412790954113,
+          "joint_tracking_rms_rad": 0.1027587503194809,
+          "object_position_error_m": 0.017721669748425484,
+          "object_tilt_deg": 1.1217011527361984
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 0.75,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 0.740000035148114,
+          "actual_source_reference_time_s": 0.740000035148114,
+          "phase_error_s": -0.009999964851886034,
+          "root_xy_tracking_error_m": 0.09547587484121323,
+          "joint_tracking_rms_rad": 0.11942590773105621,
+          "object_position_error_m": 0.12566573917865753,
+          "object_tilt_deg": 7.82515521074766
+        },
+        "full_A": {
+          "actual_control_time_s": 2.0000000949949026,
+          "actual_source_reference_time_s": 0.7500000949949026,
+          "phase_error_s": 9.499490261077881e-08,
+          "root_xy_tracking_error_m": 0.028714746236801147,
+          "joint_tracking_rms_rad": 0.10762596875429153,
+          "object_position_error_m": 0.05693504959344864,
+          "object_tilt_deg": 0.7295141014960053
+        },
+        "full_B": {
+          "actual_control_time_s": 1.9000000902451575,
+          "actual_source_reference_time_s": 0.7500000902451576,
+          "phase_error_s": 9.024515756905771e-08,
+          "root_xy_tracking_error_m": 0.021604949608445168,
+          "joint_tracking_rms_rad": 0.11123938858509064,
+          "object_position_error_m": 0.056024037301540375,
+          "object_tilt_deg": 0.7770298325291871
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 1.0,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 1.0000000474974513,
+          "actual_source_reference_time_s": 1.0000000474974513,
+          "phase_error_s": 4.7497451305389404e-08,
+          "root_xy_tracking_error_m": 0.14044074714183807,
+          "joint_tracking_rms_rad": 0.13484427332878113,
+          "object_position_error_m": 0.23493772745132446,
+          "object_tilt_deg": 9.092030151998369
+        },
+        "full_A": {
+          "actual_control_time_s": 2.240000106394291,
+          "actual_source_reference_time_s": 0.9900001063942908,
+          "phase_error_s": -0.009999893605709187,
+          "root_xy_tracking_error_m": 0.04358191043138504,
+          "joint_tracking_rms_rad": 0.11605426669120789,
+          "object_position_error_m": 0.1253778487443924,
+          "object_tilt_deg": 3.553123966401541
+        },
+        "full_B": {
+          "actual_control_time_s": 2.140000101644546,
+          "actual_source_reference_time_s": 0.9900001016445458,
+          "phase_error_s": -0.009999898355454229,
+          "root_xy_tracking_error_m": 0.04033397138118744,
+          "joint_tracking_rms_rad": 0.11782445013523102,
+          "object_position_error_m": 0.12401768565177917,
+          "object_tilt_deg": 3.5865450990116003
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 1.5,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 1.500000071246177,
+          "actual_source_reference_time_s": 1.500000071246177,
+          "phase_error_s": 7.12461769580841e-08,
+          "root_xy_tracking_error_m": 0.34144991636276245,
+          "joint_tracking_rms_rad": 0.23597945272922516,
+          "object_position_error_m": 0.5169493556022644,
+          "object_tilt_deg": 12.67056378314117
+        },
+        "full_A": {
+          "actual_control_time_s": 2.7400001301430166,
+          "actual_source_reference_time_s": 1.4900001301430164,
+          "phase_error_s": -0.009999869856983645,
+          "root_xy_tracking_error_m": 0.12344499677419662,
+          "joint_tracking_rms_rad": 0.2170899212360382,
+          "object_position_error_m": 0.34722113609313965,
+          "object_tilt_deg": 13.635149981913885
+        },
+        "full_B": {
+          "actual_control_time_s": 2.6400001253932714,
+          "actual_source_reference_time_s": 1.4900001253932713,
+          "phase_error_s": -0.009999874606728687,
+          "root_xy_tracking_error_m": 0.1209120973944664,
+          "joint_tracking_rms_rad": 0.21369701623916626,
+          "object_position_error_m": 0.34379664063453674,
+          "object_tilt_deg": 13.88218063071923
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 2.0,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 2.0000000949949026,
+          "actual_source_reference_time_s": 2.0000000949949026,
+          "phase_error_s": 9.499490261077881e-08,
+          "root_xy_tracking_error_m": 0.727824330329895,
+          "joint_tracking_rms_rad": 0.2544291913509369,
+          "object_position_error_m": 0.9743350744247437,
+          "object_tilt_deg": 28.428685862290823
+        },
+        "full_A": {
+          "actual_control_time_s": 3.2400001538917422,
+          "actual_source_reference_time_s": 1.990000153891742,
+          "phase_error_s": -0.009999846108257993,
+          "root_xy_tracking_error_m": 0.29759857058525085,
+          "joint_tracking_rms_rad": 0.19101077318191528,
+          "object_position_error_m": 0.6061716675758362,
+          "object_tilt_deg": 34.40497252254116
+        },
+        "full_B": {
+          "actual_control_time_s": 3.140000149141997,
+          "actual_source_reference_time_s": 1.990000149141997,
+          "phase_error_s": -0.009999850858003034,
+          "root_xy_tracking_error_m": 0.2859945595264435,
+          "joint_tracking_rms_rad": 0.18941590189933777,
+          "object_position_error_m": 0.5675543546676636,
+          "object_tilt_deg": 31.62050531677441
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 3.0,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 3.000000142492354,
+          "actual_source_reference_time_s": 3.000000142492354,
+          "phase_error_s": 1.424923539161682e-07,
+          "root_xy_tracking_error_m": 1.404962420463562,
+          "joint_tracking_rms_rad": 0.21004517376422882,
+          "object_position_error_m": 2.3940505981445312,
+          "object_tilt_deg": 88.98970975268118
+        },
+        "full_A": {
+          "actual_control_time_s": 4.2400002013891935,
+          "actual_source_reference_time_s": 2.990000201389194,
+          "phase_error_s": -0.009999798610806021,
+          "root_xy_tracking_error_m": 0.9060137271881104,
+          "joint_tracking_rms_rad": 0.17847228050231934,
+          "object_position_error_m": 1.8146872520446777,
+          "object_tilt_deg": 89.8340428065837
+        },
+        "full_B": {
+          "actual_control_time_s": 4.140000196639448,
+          "actual_source_reference_time_s": 2.9900001966394485,
+          "phase_error_s": -0.009999803360551507,
+          "root_xy_tracking_error_m": 0.8645427823066711,
+          "joint_tracking_rms_rad": 0.17371715605258942,
+          "object_position_error_m": 1.6743334531784058,
+          "object_tilt_deg": 88.75536085415365
+        }
+      }
+    },
+    {
+      "requested_source_reference_time_s": 4.0,
+      "runs": {
+        "full_baseline": {
+          "actual_control_time_s": 4.000000189989805,
+          "actual_source_reference_time_s": 4.000000189989805,
+          "phase_error_s": 1.8998980522155762e-07,
+          "root_xy_tracking_error_m": 1.7212252616882324,
+          "joint_tracking_rms_rad": 0.17528408765792847,
+          "object_position_error_m": 2.941532611846924,
+          "object_tilt_deg": 90.50101581672467
+        },
+        "full_A": {
+          "actual_control_time_s": 5.240000248886645,
+          "actual_source_reference_time_s": 3.9900002488866453,
+          "phase_error_s": -0.009999751113354716,
+          "root_xy_tracking_error_m": 1.317527413368225,
+          "joint_tracking_rms_rad": 0.1671581268310547,
+          "object_position_error_m": 2.363837957382202,
+          "object_tilt_deg": 89.30392102101686
+        },
+        "full_B": {
+          "actual_control_time_s": 5.1400002441369,
+          "actual_source_reference_time_s": 3.9900002441369,
+          "phase_error_s": -0.009999755863100201,
+          "root_xy_tracking_error_m": 1.3266478776931763,
+          "joint_tracking_rms_rad": 0.1633036881685257,
+          "object_position_error_m": 1.859181523323059,
+          "object_tilt_deg": 89.25258760222782
+        }
+      }
+    }
+  ],
+  "selected_candidate": "A_frame0000",
+  "selection_scope": "Initial-transition improvement; physical carry remains unsuccessful",
+  "rationale": [
+    "Full original source interval retained; candidate B crops0.1s.",
+    "A has lower hold-phase joint error and object drift than B.",
+    "Both A and B pass dense geometry and actual loader validation.",
+    "A and B both fail full carrying despite improved startup."
+  ],
+  "comparison_method": "Wall-time results include different reference progress; equal-source rows use nearest actual 50Hz sample (usually up to 10ms phase discrepancy). Equal-distance repeated hold phases use the latest tick, not the initial reset. All actual phases recorded. One seed, not statistical robustness.",
+  "reset_interpretation": "Zero reference/pre-physics robot and object velocities; post-integration physical states may have impulses. Two constructor reset integrations have state rewritten between them, not continuous4ms drift.",
+  "airborne_proxy": "Floor gap>20mm, object upward net contact>=19.62N and tilt<20deg; this proxy does not identify individual grasp forces or prove wrench closure.",
+  "endpoint_interpretation": "source_clip_complete means last complete control tick below endpoint, not reaching exact exported final pose. Raw STOPPED status also denotes this normal bounded endpoint; see stop_reason.",
+  "baseline_interpretation": "Current baseline uses actual object reference initial linear/angular velocity, unlike historical step0 which zeroed object velocity. All current probes use the same reset rule.",
+  "limitations": [
+    "No successful free-object lift/carry.",
+    "Reference is pregrasped; no approach or active gripper.",
+    "Assumed4kg object and conservative convex colliders.",
+    "Full future features are masked, matching this base checkpoint usage.",
+    "Reference geometry validation does not imply physical grasp success."
+  ]
+}

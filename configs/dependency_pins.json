@@ -1,0 +1,14 @@
+{
+  "resmimic": {
+    "url": "https://github.com/badriawan/ResMimic.git",
+    "commit": "0d54d07d8552484b9a37579c8e08e93edd59a0f5"
+  },
+  "gmr": {
+    "url": "https://github.com/YanjieZe/GMR.git",
+    "commit": "25f56db79ac411258b377b6d4ccba0c8ff3372ac"
+  },
+  "supported_layout": "ResMimic/InterPose/custom_data",
+  "geometry_python": "3.11",
+  "simulation_python": "3.8",
+  "isaac_gym": "Preview 4, installed separately under NVIDIA terms"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETED",
+  "iteration": 5000,
+  "requested_iterations": 5000,
+  "optimizer_updates": 5000,
+  "checkpoint": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/model_5000.pt"
+}

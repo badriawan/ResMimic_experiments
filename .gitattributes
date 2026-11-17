@@ -1,0 +1,12 @@
+*.npy binary
+*.npz binary
+*.pkl binary
+*.pt binary
+*.mp4 binary
+*.jpg binary
+*.png binary
+*.pdf binary
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf

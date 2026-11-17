@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "references": [
+    {
+      "id": "pick_raw",
+      "motion": "pick_place_001/data_after_conversion/interpose_floorlamp_g1.pkl",
+      "object_motion": "pick_place_001/data_after_conversion/interpose_floorlamp_g1.npz",
+      "mesh": "pick_place_001/assets/floorlamp.obj",
+      "frames": 126,
+      "fps": 30.0,
+      "endpoint_duration_s": 4.166666666666667,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "pick_place_001/data_after_conversion/interpose_floorlamp_g1.pkl": "1807e0f6384dc68f22a3ceaf5d2f8a647b56710bd3e41bc4c517f3117f043a6b",
+        "pick_place_001/data_after_conversion/interpose_floorlamp_g1.npz": "6f7980cc7a83292b4ae0d9aaed9ae052e767e74295fafd9a326298903a8f1cd1",
+        "pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506"
+      }
+    },
+    {
+      "id": "pick_feet",
+      "motion": "pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.pkl",
+      "object_motion": "pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.npz",
+      "mesh": "pick_place_001/assets/floorlamp.obj",
+      "frames": 501,
+      "fps": 120.0,
+      "endpoint_duration_s": 4.166666666666667,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.pkl": "3f65f3f4e3d8981bc3c0d4cc5debc0502a1b5e9bbd31e1655f1f17d042cd9e2d",
+        "pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.npz": "05728df915400ca5c38b9c124b9e18e35270da5daded966dacad23df93788464",
+        "pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506"
+      }
+    },
+    {
+      "id": "pick_contact",
+      "motion": "pick_place_001/demo_object_base_policy/step_2_contact/reference_corrected/interpose_floorlamp_g1_hand_contact.pkl",
+      "object_motion": "pick_place_001/demo_object_base_policy/step_2_contact/reference_corrected/interpose_floorlamp_g1_hand_contact.npz",
+      "mesh": "pick_place_001/assets/floorlamp.obj",
+      "frames": 2001,
+      "fps": 480.0,
+      "endpoint_duration_s": 4.166666666666667,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "pick_place_001/demo_object_base_policy/step_2_contact/reference_corrected/interpose_floorlamp_g1_hand_contact.pkl": "a5b0517542544d488a233a9edd81acd1d17650687716dad58509741fd7830aae",
+        "pick_place_001/demo_object_base_policy/step_2_contact/reference_corrected/interpose_floorlamp_g1_hand_contact.npz": "ddb9689312cca554e2a474b5a87b0bf2f8d98bd19d1557e66ed9b727e30c1029",
+        "pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506"
+      }
+    },
+    {
+      "id": "pick_smoothed",
+      "motion": "pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.pkl",
+      "object_motion": "pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.npz",
+      "mesh": "pick_place_001/assets/floorlamp.obj",
+      "frames": 2001,
+      "fps": 480.0,
+      "endpoint_duration_s": 4.166666666666667,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.pkl": "f3905b738068cfa116ae5a8f1ae674c07f9a6e61cbd90dcc5c7fe44634d3af9b",
+        "pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.npz": "ddb9689312cca554e2a474b5a87b0bf2f8d98bd19d1557e66ed9b727e30c1029",
+        "pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506"
+      }
+    },
+    {
+      "id": "pick_transition",
+      "motion": "pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.pkl",
+      "object_motion": "pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.npz",
+      "mesh": "pick_place_001/assets/floorlamp.obj",
+      "frames": 2601,
+      "fps": 480.0,
+      "endpoint_duration_s": 5.416666666666667,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.pkl": "4f5597f12544d8d93546c1f12848a5f87ad24638088c58a07aeb03b2a6683849",
+        "pick_place_001/demo_object_base_policy/step_3_transition/data_final_reference_transition/interpose_floorlamp_g1_transition.npz": "04f42fe7f1876a7a7db4f4f22f199cade7a2eabac5b4bf38f5b411b04d967c58",
+        "pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506"
+      }
+    },
+    {
+      "id": "lift_converted",
+      "motion": "lift_hold_001/data_after_conversion/final/lift_hold_001_g1.pkl",
+      "object_motion": "lift_hold_001/data_after_conversion/final/lift_hold_001_g1.npz",
+      "mesh": "lift_hold_001/data_after_conversion/assets/floorlamp.obj",
+      "frames": 1525,
+      "fps": 120.0,
+      "endpoint_duration_s": 12.7,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "lift_hold_001/data_after_conversion/final/lift_hold_001_g1.pkl": "78015ccf87d6256fb46b5d165c37b85b7fd05a1df976fb765c3f027ddb1d7b33",
+        "lift_hold_001/data_after_conversion/final/lift_hold_001_g1.npz": "eaa16ff152f3d85d82c6bfc180c124f1eb3d487c76825be99504daec20536c0e",
+        "lift_hold_001/data_after_conversion/assets/floorlamp.obj": "25a241469f9b2e6c2d6598a09014bcd7fa7728a33455e604fe15699ed2fab3a1"
+      }
+    },
+    {
+      "id": "lift_smoothed",
+      "motion": "lift_hold_001/data_tuning_remove_vibration/v2_final/lift_hold_001_g1.pkl",
+      "object_motion": "lift_hold_001/data_tuning_remove_vibration/v2_final/lift_hold_001_g1.npz",
+      "mesh": "lift_hold_001/data_tuning_remove_vibration/v2_final/assets/floorlamp.obj",
+      "frames": 1525,
+      "fps": 120.0,
+      "endpoint_duration_s": 12.7,
+      "quaternion": "XYZW",
+      "checks": "Paired native schema, finite arrays and normalized quaternions; no new dynamics claim",
+      "sha256": {
+        "lift_hold_001/data_tuning_remove_vibration/v2_final/lift_hold_001_g1.pkl": "ca4411c67272524131ea07d99b09be852ca395852592984fed99fbc3724e1658",
+        "lift_hold_001/data_tuning_remove_vibration/v2_final/lift_hold_001_g1.npz": "eaa16ff152f3d85d82c6bfc180c124f1eb3d487c76825be99504daec20536c0e",
+        "lift_hold_001/data_tuning_remove_vibration/v2_final/assets/floorlamp.obj": "25a241469f9b2e6c2d6598a09014bcd7fa7728a33455e604fe15699ed2fab3a1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "datasets": {
+    "pick_place_001": {
+      "source_npy": "inputs/pick_place_001/motion.npy",
+      "clock_npz": "inputs/pick_place_001/clock.npz",
+      "clock_kind": "pick_place_clock_map",
+      "rest_mesh": "inputs/assets/floorlamp_rest.ply",
+      "scale": 0.9,
+      "origin_policy": "aligned_first"
+    },
+    "lift_hold_001": {
+      "source_npy": "inputs/lift_hold_001/motion.npy",
+      "clock_npz": "inputs/lift_hold_001/clock.npz",
+      "clock_kind": "lift_hold_recorder",
+      "rest_mesh": "inputs/assets/floorlamp_rest.ply",
+      "scale": 1.0,
+      "origin_policy": "source_first"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Python 3.11. GMR itself is installed separately from its pinned checkout.
+# Compatibility ranges; the exact locally validated snapshot is recorded in
+# publication/reference_environment.json rather than claimed as a complete lock.
+numpy>=2.0,<3
+scipy>=1.13,<2
+mujoco>=3.3,<4
+mink>=1.0,<2
+daqp>=0.7,<1
+trimesh>=4,<6
+imageio[ffmpeg]>=2.35,<3
+matplotlib>=3.8,<4
+Pillow>=10,<13

@@ -1,0 +1,92 @@
+{
+  "status": "PASS_TRANSITION_BUILDER_PENDING_INDEPENDENT_VALIDATION",
+  "checks": {
+    "all_finite": true,
+    "unit_quaternions": true,
+    "source_clock_monotone": true,
+    "clock_rate_zero_to_one": true,
+    "requested_source_interval_retained": true,
+    "suffix_robot_exact": true,
+    "suffix_object_exact": true,
+    "initial_all_velocity_zero": true,
+    "joint_limits": true,
+    "joint_velocity_95pct": true,
+    "initial_support_proxy_inside": true
+  },
+  "frames": 2601,
+  "fps": 480.0,
+  "output_duration_s": 5.416666666666667,
+  "source_duration_s": 4.166666666666667,
+  "arguments": {
+    "name": "A_frame0000",
+    "hold": 0.75,
+    "ramp": 1.0,
+    "start_frame": 0,
+    "audit_only": false
+  },
+  "indices": {
+    "hold_frames": 360,
+    "ramp_frames": 480,
+    "join_output_frame": 840,
+    "join_source_frame": 240,
+    "start_source_frame": 0
+  },
+  "initial_source_state": {
+    "frame": 0,
+    "time_s": 0.0,
+    "root_speed_m_s": 0.5519059850431087,
+    "joint_speed_rms_rad_s": 4.53946729270707,
+    "joint_speed_max_rad_s": 18.678270724014055,
+    "object_speed_m_s": 0.02362398363494952,
+    "robot_com_world_m": [
+      -0.03916101691088382,
+      0.004634651145832688,
+      0.702118015629298
+    ],
+    "sampled_near_floor_support_margin_m": 0.0616372402825918,
+    "robot_com_inside_sampled_support": true,
+    "feet": {
+      "left_ankle_roll_link": {
+        "capsule_floor_gap_m": 0.0005000008141320574,
+        "near_floor_point_count": 2688
+      },
+      "right_ankle_roll_link": {
+        "capsule_floor_gap_m": 0.0005000062036177554,
+        "near_floor_point_count": 2688
+      }
+    }
+  },
+  "discarded_source_prefix_frames": 0,
+  "source_time_s_semantics": "Object source_time_s remains the interpolated original capture clock; source_reference_time_s is relative to original 480Hz reference frame0.",
+  "mapping": {
+    "time": "tau=start_frame/fps during hold; ramp tau=start_frame/fps+T*(2.5u^4-3u^5+u^6); suffix tau=start_frame/fps+.5T+(t-hold-T)",
+    "rate": "10u^3-15u^4+6u^5; range0..1",
+    "acceleration": "30u^2(1-u)^2/T",
+    "jerk": "60u(1-u)(1-2u)/T^2",
+    "join_continuity": "Clock position/rate/acceleration/jerk match at both joins. Original piecewise pose path does not become globally C3."
+  },
+  "maximum_source_clock_acceleration_s_inv": 1.875,
+  "initial_output_root_speed_m_s": 0.0,
+  "initial_output_joint_velocity_rms_rad_s": 0.0,
+  "initial_output_object_speed_m_s": 0.0,
+  "maximum_joint_velocity_ratio": 0.7281021664413947,
+  "source_sha256": {
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.pkl": "f3905b738068cfa116ae5a8f1ae674c07f9a6e61cbd90dcc5c7fe44634d3af9b",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/interpose_floorlamp_g1_hand_contact.npz": "ddb9689312cca554e2a474b5a87b0bf2f8d98bd19d1557e66ed9b727e30c1029",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2_contact/arm_smoothing/reference_smoothed/contact_plan.json": "9fb5d856eba143dc01d2694c40dd6a1153bd173b6643981a05034a0982a67740",
+    "/home/badriawan/ResMimic/assets/g1/g1_custom_collision_29dof.urdf": "8f84b6f338441242da6eba6412aec94995bf4464d6231927385b6e46043a48a2"
+  },
+  "outputs_sha256": {
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/interpose_floorlamp_g1_transition.pkl": "4f5597f12544d8d93546c1f12848a5f87ad24638088c58a07aeb03b2a6683849",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/interpose_floorlamp_g1_transition.npz": "04f42fe7f1876a7a7db4f4f22f199cade7a2eabac5b4bf38f5b411b04d967c58",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/transition_clock.npz": "0ae3921a42213bd9637da73fee79b3b9c6d0537b56d02516644c97f752513d70",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_3_transition/candidates/A_frame0000/contact_plan.json": "14bf481990c99e96649d31aca9d9aa1db034f88189ad114e2876d9e8294b0575"
+  },
+  "limitations": [
+    "Initial COM/near-floor footprint is a geometric proxy, not measured stable support or whole-body balance.",
+    "Pregrasped object starts above floor by its existing clearance; holding/preparation adds no external force or constraint.",
+    "Shared time mapping retains the original source geometry; new sample interpolation still needs independent dense validation.",
+    "Initial robot and object velocities are consistent reference zeros because all poses are repeated, not state-only velocity overrides.",
+    "No policy, physics simulation, or training is executed by this builder."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "strategy": "Pregrasped opposing fixed-palm facets on actual conservative stem collider, fixed material contact centers and opposing normals, free in-plane hand twist with soft initial object-frame tangential orientation regularizer; no active gripper, no approach/pickup certification",
+  "free_tangential_twist": true,
+  "contact_from_start": true,
+  "hold_start_frame": 0,
+  "contact_start_frame": 0,
+  "contact_end_frame": 2000,
+  "contact_phase_frames": [
+    0,
+    2000
+  ],
+  "active_joint_names": [
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_yaw_joint",
+    "right_shoulder_pitch_joint",
+    "right_shoulder_roll_joint",
+    "right_shoulder_yaw_joint",
+    "right_elbow_joint",
+    "right_wrist_roll_joint",
+    "right_wrist_pitch_joint",
+    "right_wrist_yaw_joint"
+  ],
+  "invariant_joint_names": [
+    "left_hip_pitch_joint",
+    "left_hip_roll_joint",
+    "left_hip_yaw_joint",
+    "left_knee_joint",
+    "left_ankle_pitch_joint",
+    "left_ankle_roll_joint",
+    "right_hip_pitch_joint",
+    "right_hip_roll_joint",
+    "right_hip_yaw_joint",
+    "right_knee_joint",
+    "right_ankle_pitch_joint",
+    "right_ankle_roll_joint",
+    "waist_yaw_joint",
+    "waist_roll_joint",
+    "waist_pitch_joint"
+  ],
+  "hands": {
+    "left": {
+      "link": "left_rubber_hand",
+      "pad_local": [
+        0.0813385033980012,
+        -0.035875060285131134,
+        -0.010645603280863725
+      ],
+      "pad_normal_local": [
+        -0.24240885013387195,
+        -0.9700745928044372,
+        -0.013900855084471602
+      ],
+      "tangent_local": [
+        0.970174185070276,
+        -0.2423839658945099,
+        -0.003473283817235624
+      ],
+      "hull_triangle_vertices": [
+        [
+          0.11540404707193375,
+          -0.04399165138602257,
+          -0.0382763110101223
+        ],
+        [
+          0.12820418179035187,
+          -0.0478329174220562,
+          0.0065733506344258785
+        ],
+        [
+          0.000407281331717968,
+          -0.015800612047314644,
+          -0.00023384946689475328
+        ]
+      ],
+      "pad_triangle_local": [
+        [
+          0.11540404707193375,
+          -0.04399165138602257,
+          -0.0382763110101223
+        ],
+        [
+          0.12820418179035187,
+          -0.0478329174220562,
+          0.0065733506344258785
+        ],
+        [
+          0.000407281331717968,
+          -0.015800612047314644,
+          -0.00023384946689475328
+        ]
+      ],
+      "hull_triangle_area_m2": 0.0029093199163796215,
+      "mesh_sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe",
+      "hull_support_plane_max_violation_m": 3.443432115453665e-18,
+      "support_description": "Actual side convex-hull triangle centroid, its outward normal, and fixed tangent; finite patch geometry, not proven pressure distribution",
+      "target_point_object": [
+        0.005566211952962393,
+        0.028316871592281384,
+        0.16
+      ],
+      "outward_normal_object": [
+        0.1950904409620776,
+        0.9807852567434027,
+        0.0
+      ],
+      "target_gap_m": 0.0015,
+      "target_tangent_object": [
+        0.9541405749035637,
+        -0.18979048086001787,
+        0.2315066666375293
+      ],
+      "grip_height_object_m": 0.16
+    },
+    "right": {
+      "link": "right_rubber_hand",
+      "pad_local": [
+        0.08132861493504606,
+        0.03586269666751226,
+        -0.011548917585362991
+      ],
+      "pad_normal_local": [
+        -0.24234198389288927,
+        0.9700910060886218,
+        -0.013921305571837033
+      ],
+      "tangent_local": [
+        0.9701908898989201,
+        0.24231703412166536,
+        -0.0034773742423097912
+      ],
+      "hull_triangle_vertices": [
+        [
+          0.00037762339343316853,
+          0.015763521194458008,
+          -0.0029437956400215626
+        ],
+        [
+          0.12820418179035187,
+          0.0478329174220562,
+          0.006573350168764591
+        ],
+        [
+          0.11540403962135315,
+          0.04399165138602257,
+          -0.038276307284832
+        ]
+      ],
+      "pad_triangle_local": [
+        [
+          0.00037762339343316853,
+          0.015763521194458008,
+          -0.0029437956400215626
+        ],
+        [
+          0.12820418179035187,
+          0.0478329174220562,
+          0.006573350168764591
+        ],
+        [
+          0.11540403962135315,
+          0.04399165138602257,
+          -0.038276307284832
+        ]
+      ],
+      "hull_triangle_area_m2": 0.002892077394265528,
+      "mesh_sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67",
+      "hull_support_plane_max_violation_m": -5.560346151785055e-19,
+      "support_description": "Actual side convex-hull triangle centroid, its outward normal, and fixed tangent; finite patch geometry, not proven pressure distribution",
+      "target_point_object": [
+        -0.005777173838243776,
+        -0.02871014362539507,
+        0.16
+      ],
+      "outward_normal_object": [
+        -0.1950904409620776,
+        -0.9807852567434027,
+        -0.0
+      ],
+      "target_gap_m": 0.0015,
+      "target_tangent_object": [
+        0.9586484671092033,
+        -0.19068715693886495,
+        0.211261744496602
+      ],
+      "grip_height_object_m": 0.16
+    }
+  },
+  "object_path": {
+    "horizontal": "Filtered torso-heading anterior offset, independent of failed source hand contact",
+    "forward_m": 0.38,
+    "lateral_m": 0.0,
+    "orientation": "Upright with smoothed torso heading",
+    "height": "Source lift envelope smoothed, global floor clearance2mm",
+    "filter_sigma_frames": 10.0,
+    "initial_position_delta_m": [
+      0.0204625683611816,
+      -0.018384209533894857,
+      0.00815506580290426
+    ]
+  },
+  "frames": 2001,
+  "fps": 480,
+  "solver_arguments": {
+    "name": "attempt12",
+    "forward": 0.38,
+    "lateral": 0.0,
+    "grip_height": 0.16,
+    "stagger": 0.0,
+    "sigma": 10.0,
+    "gap": 0.0015,
+    "coupled_seed": null,
+    "tangent_weight": 20.0,
+    "lock_initial_tangent": true,
+    "patch": "side",
+    "self_seed": false,
+    "temporal_tag": "attempt12"
+  },
+  "coupled_object_xy_yaw_optimized": false,
+  "object_path_frozen_during_reprojection": true,
+  "temporal_model_report": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2/reports/solver_temporal_attempt12.json",
+  "physical_grasp_verified": false,
+  "policy_run": false,
+  "training_run": false,
+  "tangent_interpretation": "Measured angle to optional forward bias; unconstrained tangential rotation is permitted, and angle is not an acceptance gate. This is not certified finite-patch sticking.",
+  "contact_model": "Fixed material contact center and opposing support normal (5DOF); free rotation about normal. No certified finite-patch no-slip or physical force closure.",
+  "tangent_regularization": {
+    "weight": 20.0,
+    "target": "Initial object-frame tangent",
+    "hard_constraint": false
+  }
+}

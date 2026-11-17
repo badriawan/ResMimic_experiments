@@ -1,0 +1,23 @@
+# Python 3.8. Install Isaac Gym separately under its applicable NVIDIA terms.
+# Install torch2.4.1/torchvision0.19.1 from the appropriate PyTorch CUDA index.
+numpy==1.23.0
+scipy==1.10.1
+tensorboard==2.14.0
+protobuf>=3.19.6,<5
+imageio[ffmpeg]>=2.31,<2.36
+trimesh>=4,<5
+matplotlib>=3.5,<3.8
+Pillow>=9,<11
+wandb>=0.15,<0.20
+tqdm
+rich
+termcolor
+joblib
+dill
+opencv-python<4.12
+pydelatin
+pyfqmr
+hydra-core
+pytorch-kinematics
+redis[hiredis]
+psutil

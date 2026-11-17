@@ -1,0 +1,28 @@
+{
+  "status": "PASS_TRAINING_COMPLETION",
+  "checks": {
+    "updates_completed": true,
+    "checkpoint_saved": true,
+    "base_unchanged": true,
+    "residual_actor_changed": true,
+    "inputs_preserved": true
+  },
+  "final_checkpoint": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/residual_policy/after_tuning/runs/20261114T121525_338256Z/model_5000.pt",
+  "optimizer_updates": 5000,
+  "tracking_success_verified": false,
+  "diagnostics": {
+    "reset_calls": 446,
+    "object_pose_setter_calls_at_episode_reset": 446,
+    "continuing_reset_integrations": 0,
+    "continuing_max_displacement_m": 0.0,
+    "endpoint_timeout_count": 14208,
+    "reference_query_clamp_count": 16992768,
+    "robot_and_object_actors": 2,
+    "automatic_episode_resets": true,
+    "object_point_reward_weight": 2.0,
+    "limitations": [
+      "Parent reset advances all environments by one2ms physics substep, including continuing environments.",
+      "No actual lift/carry success is implied by loss or episode reward."
+    ]
+  }
+}

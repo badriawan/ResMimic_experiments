@@ -1,0 +1,1 @@
+<robot name="oracle_fixture"><link name="a"><collision><geometry><sphere radius=".1" /></geometry></collision></link><link name="b"><collision><geometry><sphere radius=".1" /></geometry></collision></link></robot>

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "video_frames": 271,
+  "samples": 271,
+  "video_sha256": "122de9ff348a016bdbac25d8f2cd2951054113e8203c3680ceba2e31b408a2b3",
+  "all_inputs_unchanged": true,
+  "pose_setters_during_rollout": 0,
+  "optimizer_updates": 0
+}

@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_HASHES_MATCH_ACCEPTED_BASELINE",
+  "checks": {
+    "robot_motion": true,
+    "object_motion": true,
+    "floorlamp_mesh": true,
+    "base_policy": true,
+    "required_adapter": true
+  },
+  "source_hashes": {
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.pkl": "3f65f3f4e3d8981bc3c0d4cc5debc0502a1b5e9bbd31e1655f1f17d042cd9e2d",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/data_ready_for_policy/p1_attempt09/interpose_floorlamp_g1_foot_contact.npz": "05728df915400ca5c38b9c124b9e18e35270da5daded966dacad23df93788464",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/assets/floorlamp.obj": "ce4174c76c6f2bbe11017cfe063ede07e991d062ce1b8cecb37df88fc6eff506",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/base_policy/base_policy.pt": "fd98a2af49b8c1b3e39a57b503272db0dacc0d56c7e68d1c8dddfbd9cb9d931c",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2/scripts/foot_reference_loader.py": "f0f9a00954628961abe9c14158b4ed0762aeeda7e56129e5936f726b6e3ece83",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/baseline_manifest.json": "037bd168ecd926e319ac409f0765e71c32b1bd3809c3cbd2f50277f78ba0ebc2",
+    "/home/badriawan/ResMimic/assets/g1/g1_custom_collision_29dof.urdf": "8f84b6f338441242da6eba6412aec94995bf4464d6231927385b6e46043a48a2",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/data_ready_for_policy/p1_attempt09/diagnostics.npz": "68a0e45a8bdcaf84332fb4320196c7d980d2686f44fd2ee942387c4b5ae6e03f",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/data_ready_for_policy/p1_attempt09/measurements.json": "7b1a008d2b639de124e7cb16bc8500f70d266f7820a44f5033ceeea786629842",
+    "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_1_walking/results/attempt02/rollout_states.npz": "4a5eeb39a6f8e9809226c7e9e1737e6ac14c700296371feb6121ab86c69f4fc0"
+  },
+  "checkpoint_loaded_in_step2": false,
+  "physics_simulation_in_step2": false,
+  "training_in_step2": false,
+  "source_p1_replaced": false,
+  "all_new_files_root": "/home/badriawan/ResMimic/InterPose/custom_data/pick_place_001/demo_object_base_policy/step_2",
+  "scope": "Reference correction, static collider audit, conditional wrench analysis and pose-replay video"
+}
