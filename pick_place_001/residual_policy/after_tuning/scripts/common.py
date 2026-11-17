@@ -24,6 +24,12 @@ def python_executable():
 def relocate_path(value):
     """Rebase historical metadata from its original ResMimic installation."""
     text=str(value)
+    current=Path(text)
+    custom_root=ROOT.parents[2]
+    # Rebasing must be idempotent, including a checkout nested inside another
+    # custom_data directory during a clean-tree test.
+    if current.is_absolute() and (current==custom_root or custom_root in current.parents):
+        return str(CHECKPOINT) if current==LOCAL_CHECKPOINT else text
     marker='/InterPose/custom_data/'
     if marker in text:
         suffix=text.split(marker,1)[1]

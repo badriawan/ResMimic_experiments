@@ -25,6 +25,7 @@ evaluation=task+'evaluations/model_5000_20261114T225204_685687Z/'
 fixed.extend(evaluation+name for name in ['result.json','samples.json','artifact_validation.json'])
 fixed.extend(['pick_place_001/data_ready_for_policy/p1_attempt09/measurements.json','pick_place_001/data_ready_for_policy/p1_attempt09/diagnostics.npz'])
 selected={p.relative_to(root).as_posix() for pattern in patterns for p in root.glob(pattern) if p.is_file()}
+selected={name for name in selected if Path(name).name not in {'oracle_fixture.urdf','oracle_robot_lamp.urdf'}}
 for name in fixed:
     if not (root/name).is_file():raise FileNotFoundError(name)
     selected.add(name)

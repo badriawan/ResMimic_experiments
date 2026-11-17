@@ -7,6 +7,7 @@ from common import ROOT,REPO,relocate_path,relocate_values,sha,write_json,python
 import render_policy
 
 checks={}
+checks['current_checkout_path_is_idempotent']=relocate_path(str(ROOT/'tests/current_fixture.txt'))==str(ROOT/'tests/current_fixture.txt')
 with patch.dict('os.environ',{'RESMIMIC_PYTHON':sys.executable}):
     checks['interpreter_override']=python_executable()==Path(sys.executable).absolute()
 run=ROOT/'runs/20261114T121525_338256Z'
