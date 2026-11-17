@@ -1,4 +1,4 @@
-# ResMimic Custom Data Experiments
+# ResMimic Experiments: Custom Data to G1
 
 Reproducible InterPose-to-G1 reference conversion, contact correction, arm smoothing, synchronized startup transitions, and residual-policy experiments for **ResMimic**.
 

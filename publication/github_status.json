@@ -1,8 +1,9 @@
 {
-  "state": "prepared_locally_authentication_required",
-  "repository": "badriawan/resmimic-custom-data",
-  "visibility": null,
-  "remote_created": false,
-  "remote_pushed": false,
-  "note": "Local preparation is in progress. GitHub authentication and visibility selection are required for publication."
+  "state": "repository_created",
+  "repository": "badriawan/ResMimic_experiments",
+  "url": "https://github.com/badriawan/ResMimic_experiments",
+  "visibility": "public",
+  "repository_provided_by_user": true,
+  "upload_verified": false,
+  "note": "Existing initial README history is retained by a merge; reviewed experiment upload is pending verification."
 }

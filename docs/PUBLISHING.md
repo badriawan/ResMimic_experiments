@@ -28,7 +28,7 @@ The wrapper uses an installed GitHub CLI or the local ignored CLI downloaded fro
 Once the local allowlisted files are committed, explicitly choose the destination and visibility:
 
 ```bash
-python3 tools/publish_github.py --repo badriawan/resmimic-custom-data --visibility public
+python3 tools/publish_github.py --repo badriawan/ResMimic_experiments --visibility public
 ```
 
 Use `--visibility private` for a private repository. The helper requires authentication and a clean reviewed working tree, refuses an unrelated existing destination, creates the GitHub repository, pushes `main` and checks the remote commit SHA. A local Git commit alone is not reported as a successful GitHub publication.

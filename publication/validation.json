@@ -34,7 +34,7 @@
   "new_optimizer_updates": 0,
   "corrected_PPO_training_executed": false,
   "successful_physical_lift_carry_verified": false,
-  "github_publication": "Pending authentication and visibility selection; no remote push claimed.",
+  "github_publication": "User-provided public repository exists; upload verification pending.",
   "scope_notes": [
     "Existing pinned external ResMimic/GMR and installed interpreters were reused.",
     "No new corrected PPO run, long training, or actual new TensorBoard server was started.",

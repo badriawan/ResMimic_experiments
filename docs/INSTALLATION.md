@@ -11,7 +11,7 @@ git checkout 0d54d07d8552484b9a37579c8e08e93edd59a0f5
 git clone https://github.com/YanjieZe/GMR.git GMR
 git -C GMR checkout 25f56db79ac411258b377b6d4ccba0c8ff3372ac
 mkdir -p InterPose
-git clone https://github.com/badriawan/resmimic-custom-data.git InterPose/custom_data
+git clone https://github.com/badriawan/ResMimic_experiments.git InterPose/custom_data
 export RESMIMIC_ROOT="$PWD"
 cd InterPose/custom_data
 ```
