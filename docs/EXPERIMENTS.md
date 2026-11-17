@@ -136,14 +136,28 @@ Recorded reference replay: [Video 05](../media/05_transition_reference.mp4). A s
 Prepare the base checkpoint first, then render the supplied historical experiment configuration with residual actions disabled:
 
 ```bash
+# Verify/copy the frozen base_policy.pt from the pinned ResMimic checkout.
 python3 tools/prepare_assets.py
 TASK="$PWD/pick_place_001/residual_policy/after_tuning"
+
+# Historical RESIDUAL checkpoint; this is separate from base_policy.pt.
 HISTORICAL="$TASK/runs/20261114T121525_338256Z/model_5000.pt"
 
+# Restore the saved experiment, but use only the frozen base's actions.
 bash "$TASK/render_latest.sh" --checkpoint "$HISTORICAL" --base-only
 ```
 
-The renderer restores the saved environment configuration, rebases historical paths to your checkout, and runs a single bounded deterministic physical rollout. No optimizer update occurs. The supplied residual checkpoint provides compatible run metadata; residual actions are zero in `--base-only` mode.
+The two checkpoint files have different roles:
+
+| File / option | Role in this command |
+|---|---|
+| `base_policy.pt` | Frozen ResMimic controller, loaded separately from the local copy or upstream fallback described in installation |
+| `--checkpoint "$HISTORICAL"` (`model_5000.pt`) | Historical residual checkpoint; loaded with its saved normalizers and neighboring run configuration to restore the experiment |
+| `--base-only` | Sets every residual action to zero, so the applied action comes only from the frozen base policy |
+
+**Keep `model_5000.pt` as the `--checkpoint` argument for this renderer.** `base_policy.pt` is a separate TorchScript controller and cannot replace the residual checkpoint expected by that argument. The current renderer still requires the historical checkpoint and its run files in base-only mode.
+
+The renderer restores the saved environment configuration, rebases historical paths to your checkout, and runs a single bounded deterministic physical rollout. It loads the historical residual state, but `--base-only` disables its action contribution. No optimizer update occurs.
 
 Outputs appear in a new `"$TASK/evaluations/"` folder, including `base_policy_physx.mp4`, state arrays and `result.json`. This new rendering uses the saved training environment configuration; it is not asserted to be byte-identical to the earlier Step 3 probe, whose termination settings differ.
 

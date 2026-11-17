@@ -71,7 +71,18 @@ TensorBoard 2.14 uses `protobuf<5` in the pinned ResMimic requirements. The hist
 python3 tools/prepare_assets.py
 ```
 
-This verifies the base policy already supplied by pinned ResMimic and copies it to the local experiment path. It performs no download, training, or SDK installation. Expected SHA-256:
+The frozen ResMimic base policy comes from the pinned **ResMimic repository**:
+
+```text
+Source:     $RESMIMIC_ROOT/legged_gym/assets/checkpoints/base_policy.pt
+Local copy: $RESMIMIC_ROOT/InterPose/custom_data/pick_place_001/base_policy/base_policy.pt
+```
+
+`prepare_assets.py` verifies the source SHA-256 and creates the local copy if it is missing. If that copy already exists, the script verifies it and refuses to overwrite a different checkpoint. It performs no download, training, or SDK installation.
+
+**The base-policy binary is not included in `ResMimic_experiments`.** Clone the pinned ResMimic repository first; it supplies the source checkpoint. The experiment loader uses the local copy when present and falls back to the source path otherwise. This is the same frozen base policy in either location.
+
+Expected SHA-256 for both files:
 
 ```text
 fd98a2af49b8c1b3e39a57b503272db0dacc0d56c7e68d1c8dddfbd9cb9d931c
